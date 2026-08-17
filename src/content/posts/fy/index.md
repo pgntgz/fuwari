@@ -1,0 +1,75 @@
+---
+alias: "fy/沉浸式翻译的开源替代——简约翻译的使用"
+title: 沉浸式翻译的开源替代——简约翻译的使用体验教程
+published: 2026-04-01
+description: 简单介绍KISS Translator和基本使用
+category: 推荐
+tags:
+  - 教程向
+  - 翻译
+  - firefox
+  - 开源替代
+  - 长篇
+image: https://box.pgntgz.org/posts/fy/kissfm.webp
+---
+### 放弃沉浸式翻译
+我什么时候开始用沉浸式翻译我自己已经记不得了，大概我有第一台PC安装chrome的时候吧。
+
+首先它太商业化了，虽然OSS商业化是没毛病，但感觉已经有点牛皮藓了。
+
+我彻底放弃是在沉浸式翻译[爆出安全漏洞的时候](https://www.techbang.com/posts/124832-immersive-translation-security-flaw) 我在想卧槽，这玩意不是开源的吗，怎么会有这么严重的问题？结果我才发现我在他的页面为找不到许可证，我找到github仓库看到
+![其实我早就是闭源软件了](https://box.pgntgz.org/posts/fy/其实我早就是闭源软件了.webp)
+
+对的，**我才知道在2023年沉浸式翻译停止了开源**，现在在插件商店获取的版本都是不自由的软件——一个保存了我LLM api key的软件竟然不开源！这是我实在没办法接受的事情，我找了一些替代品，最后我选择了[KISS Translator](https://github.com/fishjar/kiss-translator)  
+他的目标列表里1.2分别是
+- [x] 保持简约 
+- [x] 开放源代码
+..............
+事实上它做到了，而且做得超级棒
+![特性](https://box.pgntgz.org/posts/fy/tk.webp)
+## 简介
+[KISS Translator（简约翻译）](https://github.com/fishjar/kiss-translator)是使用GPL-3.0发布的“一个简约、开源的 [双语对照翻译扩展 & 油猴脚本](https://github.com/fishjar/kiss-translator)  
+
+他支持chromium系和firefox系的浏览器，可以在相应的商店找到此扩展。他也可以在油猴脚本中运行，从而支持更多平台，不过根据介绍油猴脚本会遇到更多使用上的问题（跨域问题、脚本冲突等）。
+
+简约翻译的同步配置服务不依赖中心化网络。你不需要注册一个没有EE2E的账号同步自己的隐私
+
+
+### 简单配置
+
+简约翻译的上手是完全无难度，相对臃肿的沉浸式翻译，简约翻译十分简约直白。我觉得可以几乎完美替代沉浸式翻译所有功能并且更上一层楼
+
+如同名字它遵守KISS原则，十分“Stupid”开箱即用，基本功能这些没啥介绍的
+
+- 按住Alt+Q全页面翻译
+- 左键选中的内容点击图标圈选翻译
+- youtub有字幕的水平双语字幕自动开启，直接在右侧生成双语对照，对于我这种英文很烂的真的有用
+
+![双语言](https://box.pgntgz.org/posts/fy/fyyt.webp)
+KISS不代表在功能性上也要Stupid，KISS Translator在LLM的扩展性上很棒，下面讲讲一些LLM配置
+
+
+### LLM翻译
+在接口设置里，可以管理翻译服务，相比沉浸式翻译有更多的可选项。
+
+比如我十分讨厌沉浸式翻译，他的划词翻译只可用他指定的几个服务商，基本上都要冲会员。free只有智谱的GLM4和硅基流动，结果就是走了代理就慢点要死。而简约翻译完全没有这个问题。
+
+KISS Translator不但支持open ai格式的LLM接口通过自定义接口可在理论上支持所有LLM
+和翻译接口。
+
+简约翻译一样预先配置了不少LLM服务商，填写API key和mode ID即可使用，拿我用的Google ais来说
+
+Google ai studio的gemini填入key就可以，然后填写模型ID [ai.google.dev的这个页面](https://ai.google.dev/gemini-api/docs/pricing?hl=zh-cn) 收录了mode ID和价格。个人用的`gemini-2.5-flash-lite` 价格实惠，在要求精度的情况下偶尔用一下有其他家的也是大同小意。
+
+不想花钱想要精度高一点本地ollama当然是支持的，我在本机跑的，URl地址填入http://127.0.0.1:11434/v1/chat/completions 选择模型就是可用状态了。
+
+我个人感觉`translategemma:4b` 是个不错的甜品点，考虑到中国网民平均配置是4060。4b模型在需要点精度但不想花钱的场景挺不错。建议开启流式传输会更丝滑。
+
+简约翻译同样支持调整提示词，达到更好的效果，当然作为遵循KISS原则的软件不调也足够
+
+不过笔者干了个很蠢的事情——我在复制模型ID时多了一个空格，debug半天，最后发现问题是时成功把自己7️7️气笑了。也提醒大家，心态要乐观点。
+
+2026.3.29-4.1编辑完成
+
+
+
