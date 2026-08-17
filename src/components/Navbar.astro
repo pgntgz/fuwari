@@ -1,5 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import avatarImg from "../assets/images/avatar.webp";
 import { navBarConfig, siteConfig } from "../config";
 import { LinkPresets } from "../constants/link-presets";
 import { LinkPreset, type NavBarLink } from "../types/config";
@@ -27,7 +29,7 @@ let links: NavBarLink[] = navBarConfig.links.map(
         "card-base !overflow-visible max-w-[var(--page-width)] h-[4.5rem] !rounded-t-none mx-auto flex items-center justify-between px-4"]}>
         <a href={url('/')} class="btn-plain scale-animation rounded-lg h-[3.25rem] px-5 font-bold active:scale-95">
             <div class="flex flex-row text-[var(--primary)] items-center text-md">
-                <img src={url("/assets/images/avatar.webp")} alt="Avatar" class="w-8 h-8 rounded-lg object-cover mr-2.5 shadow-sm" />
+                <Image src={avatarImg} alt="Avatar" class="w-8 h-8 rounded-lg object-cover mr-2.5 shadow-sm" loading="eager" />
                 {siteConfig.title}
             </div>
         </a>
