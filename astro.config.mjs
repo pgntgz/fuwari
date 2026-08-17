@@ -30,6 +30,9 @@ export default defineConfig({
 	site: "https://pgntgz.org/",
 	base: "/",
 	trailingSlash: "always",
+	build: {
+		inlineStylesheets: "always",
+	},
 	integrations: [
 		tailwind({
 			nesting: true,
