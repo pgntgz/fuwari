@@ -45,6 +45,7 @@ export const navBarConfig: NavBarConfig = {
 			name: "PJSK贴纸",
 			url: "https://pjsk.pgntgz.top/pjsk/",
 			external: true,
+			icon: "material-symbols:sentiment-satisfied-outline-rounded",
 		},
 		{
 			name: "GitHub仓库",
