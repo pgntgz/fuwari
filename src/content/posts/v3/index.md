@@ -9,18 +9,18 @@ tags:
   - 教程向
   - firefox
   - Google
-image: https://box.pgntgz.org/posts/v3/%E5%B0%81%E9%9D%A2.avif
+image: https://box.pgntgz.top/posts/v3/%E5%B0%81%E9%9D%A2.avif
 ---
 ### uBlock Origin 之死
 [^1]Google将在8 月 31 日起从 Chrome 商店中移除所有 Manifest V2 （MV2）扩展程序,其中包括大名鼎鼎的广告拦截插件——**uBlock Origin。**
-![Pasted image 20260711015900.png](https://box.pgntgz.org/posts/v3/Pasted%20image%2020260711015900.webp)
+![Pasted image 20260711015900.png](https://box.pgntgz.top/posts/v3/Pasted%20image%2020260711015900.webp)
 事实上在去年Google在chrome就已经默认禁用了MV2,你需要开启开发者模式才可以使用uBlock Origin，在当时我就嫌弃chrome死活配置不好Fcitx5加上我不想装改uBlock Origin像西天取经就跳槽到了Firefox。
 
 这次Google又显然的挨大骂，当然也有人为Google喊冤——MV3取代MV2是先进取代落后，是uBlock Origin自己不与时俱进。所以**换掉Manifest V2的Google，骂挨的冤不冤？**
 
 ### 为啥非uBlock Origin不可？
 任何市场都有替代品，在广告拦截上一样，uBlock Origin有一堆替代品，但在这一领域的替代品为何都无法撼动uBlock Origin？
-![这个要缩放80.png|316](https://box.pgntgz.org/posts/v3/%E8%BF%99%E4%B8%AA%E8%A6%81%E7%BC%A9%E6%94%BE80.webp)<center>*图 ：正在运行的UBO*</center>
+![这个要缩放80.png|316](https://box.pgntgz.top/posts/v3/%E8%BF%99%E4%B8%AA%E8%A6%81%E7%BC%A9%E6%94%BE80.webp)<center>*图 ：正在运行的UBO*</center>
 #### 开动脑筋
 其实答案很简单——大伙都开动脑筋**搞商业化了**。死掉的家伙满坑满谷，包括但不限于：
 
@@ -28,7 +28,7 @@ image: https://box.pgntgz.org/posts/v3/%E5%B0%81%E9%9D%A2.avif
 2. AdBlock——靠名字好自带自然流量，不过2015 年 10 月原作者宣布将 AdBlock 出售给了一位拒绝透露姓名的匿名买家，[^4]然后就是宣布 AdBlock 将全面参与前面说的Adblock Plus的Acceptable Ads计划，直到2021 年 4 月，Adblock Plus 的母公司 **Eyeo GmbH 正式对外宣布全面收购 AdBlock** 及其背后的公司。
 3.  Ghostery——他的母公司 Evidon 本身就是数字营销行业的成员，Ghostery和很多开源应用一样会鼓励用户开启一个数据分享计划“帮我们收集追踪器数据以优化拦截”，可[^3]实际上如果你看了天书一样的条例会发现**这些数据被卖给广告商**。
 4. uBlock——uBlock Origin曾经不叫uBlock Origin就叫uBlock，维护者gorhill图方便在 2015 年把 `uBlock` 这个项目名和所有权转让给了一个叫 Chris Aljoudi 的开发者。结果这货立马开始搞修正先是开了捐款，还试图加入Acceptable Ads计划。
-![Adblock Plus的可接受广告示意图.png](https://box.pgntgz.org/posts/v3/Adblock%20Plus%E7%9A%84%E5%8F%AF%E6%8E%A5%E5%8F%97%E5%B9%BF%E5%91%8A%E7%A4%BA%E6%84%8F%E5%9B%BE.webp)<center>*图 ：Adblock Plus对可接受广告的示意图*</center>
+![Adblock Plus的可接受广告示意图.png](https://box.pgntgz.top/posts/v3/Adblock%20Plus%E7%9A%84%E5%8F%AF%E6%8E%A5%E5%8F%97%E5%B9%BF%E5%91%8A%E7%A4%BA%E6%84%8F%E5%9B%BE.webp)<center>*图 ：Adblock Plus对可接受广告的示意图*</center>
 #### UBO为何独善其身？
 gorhill在上面的uBlock这件事情后立马重上井冈山，并把新项目命名为uBlock **Origin** Origin在英文中意为起源和血统。至于分裂后的uBlock遭[AdBlock](https://zh.wikipedia.org/wiki/AdBlock "AdBlock")开发商收购。
 
@@ -54,7 +54,7 @@ Google挨骂的主要原因是换掉Manifest V2 。善意解读下最好的辩�
 
 #### MV3都改了啥？
 抛开UBO不谈，MV3的确是有技术升级，最重要的就是安全性的改进：
-![Pasted image 20260711013805.png](https://box.pgntgz.org/posts/v3/Pasted%20image%2020260711013805.webp)<center>*图 ：GNU LibreJS项目*</center>
+![Pasted image 20260711013805.png](https://box.pgntgz.top/posts/v3/Pasted%20image%2020260711013805.webp)<center>*图 ：GNU LibreJS项目*</center>
 大家都知道不明来源JS是个严重的安全问题，RMS本人极其讨厌JS的特性，他称JS是“非自由软件陷阱”（The JavaScript Trap），因为相比明文的HTML，JS的恶意程序可以编译为二进制。RMS还为此发动了LibreJS（不过和GNU大多数怀着美好愿望的项目一样烂尾了）。Tor的增强模式会直接屏蔽所有JS，而MV2允许扩展从远程服务器动态下载并运行 JavaScript扩展里要运行的每一行 JavaScript 代码，而在MV3，JS都必须死死地打包在下载的 `.zip` 插件包里，必须通过 Chrome Web Store 的静态和动态上架审核。极大改善了安全性。
 
 此外还有：Service Workers 替代 Background Pages，改为事件驱动可以缓解插件内存占用问题，插件闲置会休眠；MV2 充斥着极其恶心的**回调地狱（Callback Hell）** MV3推动**Promise** 架构方便开发者；引入了更强大的运行时可选权限改善了权限控制.........
@@ -72,7 +72,7 @@ Google在更新中直接砍掉了 `webRequest` 的修改功能，换成了 **`de
 
 #### FIrefox呢？
 首先mozilla就宣布Firefox对MV2的支持将是不限期的。
-![Pasted image 20260711013342.png](https://box.pgntgz.org/posts/v3/Pasted%20image%2020260711013342.webp)<center>*图：firefox不会放弃MV2*</center>
+![Pasted image 20260711013342.png](https://box.pgntgz.top/posts/v3/Pasted%20image%2020260711013342.webp)<center>*图：firefox不会放弃MV2*</center>
 当然mozilla从网景的打不过我开源重组为mozilla，到也是今天身经百战了，网景发布时Google都没成立，在做浏览器你Google才是too young,too simple的。mozilla怎么会不知道MV2不如MV3？mozilla2022年就支持了MV3。**而mozilla版本的MV3不会干掉UBO**
 
 mozilla做的极其简单，把`webRequest` API加回来不就行了。于是UBO就又活了，就这么简单。Firefox和所有以Gecko为上游的浏览器都会支持MV2且哪怕MV2真的停止了支持，UBO可以不阉割的过渡到MV3。而Firefox的插件支持依然优秀，firefox of Android甚至有专用的插件体系，并且支持UBO。而mozilla的MV3运行到现在依然好好的，加回`webRequest` API完全不影响MV3。
@@ -86,7 +86,7 @@ Google的行为所有依赖Chromium的下游浏览器都必须跟着当太监，
 
 ### 现在怎么办？
 首先当然是推荐更换Firefox，事实上Firefox不弱于Chrome。
-![mozilla价值—造反有理.png](https://box.pgntgz.org/posts/v3/mozilla%E4%BB%B7%E5%80%BC%E2%80%94%E9%80%A0%E5%8F%8D%E6%9C%89%E7%90%86.webp)<center>*图 ：mozilla曾用的宣传语——造反有理*</center>
+![mozilla价值—造反有理.png](https://box.pgntgz.top/posts/v3/mozilla%E4%BB%B7%E5%80%BC%E2%80%94%E9%80%A0%E5%8F%8D%E6%9C%89%E7%90%86.webp)<center>*图 ：mozilla曾用的宣传语——造反有理*</center>
 
 我从使用电脑时就在用Chrome，有很强的惯性，但是我还是换了Firefox——Firefox不弱，在性能上并没有啥明显的落后，比如在内存管理上更为保守和高效。在开启大量标签页的场景下，整体系统内存占用通常显著低于 Chromium，多任务处理更为轻盈。
 

@@ -10,7 +10,7 @@ tags:
   - firefox
   - 开源替代
   - 长篇
-image: https://box.pgntgz.org/posts/fy/kissfm.webp
+image: https://box.pgntgz.top/posts/fy/kissfm.webp
 ---
 ### 放弃沉浸式翻译
 我什么时候开始用沉浸式翻译我自己已经记不得了，大概我有第一台PC安装chrome的时候吧。
@@ -18,7 +18,7 @@ image: https://box.pgntgz.org/posts/fy/kissfm.webp
 首先它太商业化了，虽然OSS商业化是没毛病，但感觉已经有点牛皮藓了。
 
 我彻底放弃是在沉浸式翻译[爆出安全漏洞的时候](https://www.techbang.com/posts/124832-immersive-translation-security-flaw) 我在想卧槽，这玩意不是开源的吗，怎么会有这么严重的问题？结果我才发现我在他的页面为找不到许可证，我找到github仓库看到
-![其实我早就是闭源软件了](https://box.pgntgz.org/posts/fy/其实我早就是闭源软件了.webp)
+![其实我早就是闭源软件了](https://box.pgntgz.top/posts/fy/其实我早就是闭源软件了.webp)
 
 对的，**我才知道在2023年沉浸式翻译停止了开源**，现在在插件商店获取的版本都是不自由的软件——一个保存了我LLM api key的软件竟然不开源！这是我实在没办法接受的事情，我找了一些替代品，最后我选择了[KISS Translator](https://github.com/fishjar/kiss-translator)  
 他的目标列表里1.2分别是
@@ -26,7 +26,7 @@ image: https://box.pgntgz.org/posts/fy/kissfm.webp
 - [x] 开放源代码
 ..............
 事实上它做到了，而且做得超级棒
-![特性](https://box.pgntgz.org/posts/fy/tk.webp)
+![特性](https://box.pgntgz.top/posts/fy/tk.webp)
 ## 简介
 [KISS Translator（简约翻译）](https://github.com/fishjar/kiss-translator)是使用GPL-3.0发布的“一个简约、开源的 [双语对照翻译扩展 & 油猴脚本](https://github.com/fishjar/kiss-translator)  
 
@@ -45,7 +45,7 @@ image: https://box.pgntgz.org/posts/fy/kissfm.webp
 - 左键选中的内容点击图标圈选翻译
 - youtub有字幕的水平双语字幕自动开启，直接在右侧生成双语对照，对于我这种英文很烂的真的有用
 
-![双语言](https://box.pgntgz.org/posts/fy/fyyt.webp)
+![双语言](https://box.pgntgz.top/posts/fy/fyyt.webp)
 KISS不代表在功能性上也要Stupid，KISS Translator在LLM的扩展性上很棒，下面讲讲一些LLM配置
 
 

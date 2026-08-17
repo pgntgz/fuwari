@@ -7,7 +7,7 @@ tags:
   - 长篇
   - 代理协议
   - 开源替代
-image: https://box.pgntgz.org/posts/gfw/gfw.webp
+image: https://box.pgntgz.top/posts/gfw/gfw.webp
 ---
 ### 引言
 事实上这期更新不是在一个好时机，我以为还是回到常态的，但是这种状态一直维持到了现在依然没有回到以前的感觉，不过一直拖着也不是改事情我不打算鸽了。OK，不啰唆了。
@@ -27,7 +27,7 @@ SS后的岁月大概就是我最熟悉的“理所当然”的时间，这段时
 
 而简单概括一下就是SS前的代理手段比如OPENVPN啊或者直接SSH都是比较原始的，这篇GAE暴死后的[^1]文章提到的PPTP / L2TP / SSTP / OpenVPN都是普通的企业 VPN 协议。而占据推荐C位的就是主角shadowsocks。
 
-![Pasted image 20260801152907](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801152907.webp)
+![Pasted image 20260801152907](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801152907.webp)
 SS相比一般的代理协议主要有这些区别：
 - 协议头完全随机：传统的 VPN 连接，握手时依然会主动报告协议等信息，SS则改成了客户端把目标地址加密到服务端解密
 - 拆分架构：相比传统协议直接修改系统的全局网卡配置，SS是工作在应用层级的
@@ -55,7 +55,7 @@ GFW的维护需要政府实打实的雇佣专业的网络安全团队盯着识�
 > 
 > 这是一个造了几千年墙的保守的农耕民族，缺乏对别人的基本尊重，不愿意分享，喜欢遮遮掩掩，喜欢小圈子抱团，大概这些传统是改不掉了吧。
 
-![Pasted image 20260801163028](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801163028.webp)
+![Pasted image 20260801163028](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801163028.webp)
 不过我是觉得表达政治的权利的，更何况情形是自己辛辛苦苦搞得SS被SSR用了还被无视许可证不开源，我是觉得我要是clowwindy估计骂的比他脏。
 
 其实“翻墙娱乐圈”后来的种种不好的事情可以说也算是被clowwindy预言了原因
@@ -63,7 +63,7 @@ GFW的维护需要政府实打实的雇佣专业的网络安全团队盯着识�
 上文提到的SS和SSR的撕逼则更知名一点，简单来说就是
 
 SS逐渐被GFW识别，开发者breakwa11主张通过复杂的“混淆（OBFS）”来对抗 GFW，clowwindy不同意他坚持SS要轻量。结果就是breakwa11 fork了ShadowsocksR。
-![Pasted image 20260801162235](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801162235.webp)
+![Pasted image 20260801162235](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801162235.webp)
 <center>*breakwa11的推特*</center>
 fork是开源常事，本来没啥，不过幽默的是breakwa11直接无视了Shadowsocks是GPLv3授权的，SSR用了SS就必须也用GPLv3公开源代码，开始早期breakwa11只发布SSR的二进制。到后面被指责是偷窃代码才开源。
 
@@ -81,7 +81,7 @@ SS而后各种的代理协议和客户端涌现，基本有了现在的雏形。
 
 
 
-![Pasted image 20260727213633 w-30%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260727213633.webp)
+![Pasted image 20260727213633 w-30%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260727213633.webp)
 <center>*SS客户端LOGO*</center>
 
 [^4]周恩来曾说：“中央政治局的中央政治就是处理好毛主席、林副主席、江青同志的关系”
@@ -92,12 +92,12 @@ SS而后各种的代理协议和客户端涌现，基本有了现在的雏形。
 SS之后各种优秀的代理客服端层出不穷。
 
 2015年的发起的project V带来了大名鼎鼎的V2Ray和VMess系列协议。
-![Pasted image 20260727214323](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260727214323.webp)
+![Pasted image 20260727214323](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260727214323.webp)
 <center>*V2ray*</center>
 V2ray有两次重要的转折，[^5]分别是2019年创始人Victoria Raymond失联导致主仓库因为权限问题无法正常维护，创建了**V2Fly** 承担项目维护。（改名的只有github仓库，所以以下仍叫V2ray）
 #### 开源肥皂剧
 更著名是2020 年，开发者 **RPRX** 在 V2Ray 中推出了革命性的增强版传输协议 **XTLS**。XTLS的问题是RPRX因为讨厌自己的软件被魔改坑钱自己写了个协议分发XTLS也就是**XTLS-1.0 许可证**。该许可证带有“禁止用于商业滥用/限制某些行为”和“”的附加条款，而无论[^6]FSF和OSI都禁止这么做。
-![Pasted image 20260801142419](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801142419.webp)
+![Pasted image 20260801142419](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801142419.webp)
 <center>*OSI的标准*</center>
 [^7]这导致V2ray负责Debian维护的rogers0不干了，请求RPRX更换符合OSI标准的许可证，因为这会导致Debian拒绝接着合并有不自由的XTLS的V2ray到自己的主仓库——Debian仓库有软件必须符合开源标准的原则：
 
@@ -132,11 +132,11 @@ Roger 收到
 #### 分裂
 结果就是RPRX一时的嘴快犯了社区的众怒，虽然大多数看热闹的人无所谓普遍更支持RPRX。甚至已经有人奇异搞笑的要把Debian的人打为间谍了。
 
-![Pasted image 20260731203254](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260731203254.webp)
+![Pasted image 20260731203254](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260731203254.webp)
 <center>*按5%的指标抓间谍！*</center>
 但是说到底客观上**模糊不清的许可证问题对于V2ray的开发工作是颗大雷**，最终V2ray维护者们还是经过投票确认XTLS不符合V2ray承诺遵守的MIT协议，并在V2ray-core 4.33.0版本移除了XTLS。RPRX则带着XTLS自己建立了project X。
 
-![Xray w-30%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801142627.webp)
+![Xray w-30%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801142627.webp)
 <center>*project X*</center>
 不过幽默的是RPRX后续还是妥协了，还是在project X把许可证换成了符合OSI标准的MPL-2.0。大批GUI客户端这才开始放心的把内核换成更优秀的X-core，XTLS的优秀特性至此才真正面向大众。X-core逐渐取代V2ray成为V2ray系主流。
 
@@ -145,7 +145,7 @@ Roger 收到
 
 ### Clash
 而大家熟悉的GO写成的“小猫咪”Clash于 2018 年前后在 GitHub 上开源。在V2ray的分裂中Clash依靠简单稳定的特性迅速崛起，一路高歌猛进长期是最受欢迎的代理核心。
-![Pasted image 20260727214354 w-30%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260727214354.webp)
+![Pasted image 20260727214354 w-30%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260727214354.webp)
 <center>*clash*</center>
 Clash的开发中没有发生许可证的闹剧，早期Clash是MIT后面换了GPL。不过Clash同样遭遇过这样的悲剧——Clash删库
 
@@ -154,7 +154,7 @@ Clash的开发中没有发生许可证的闹剧，早期Clash是MIT后面换了G
 [^9]根据当时还是民小区的太监区的讨论，起因是2023 年 11 月 2 日Clash一个客户端Clash For Windows（以下简称CFW）的维护者因为自己个人信息保护意识（据说发车牌生活照甚至收款码）不足挨了铁拳。
 
 本来其实伤害不是很大，毕竟Clash核心正常维护就好，CFW本来就是完成状态的，开源软件嘛，库没了代码有人备份就没事，只要后续有人接手继续合并新特性就没事，而且就是没人接手CFW也就是少了个客户端。
-![Pasted image 20260801143322](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801143322.webp)
+![Pasted image 20260801143322](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801143322.webp)
 <center>*CFW*</center>
 
 不过幽默的是大伙分不清GUI客户端和核心开始疯狂的恐慌。笔者亲历了哪一个时期，基本就是一群炒作狗在墙内疯狂散布Clash完蛋的消息，不明觉厉的人根本分不清CFW和clash,墙内还是数码文盲的墙外社区（推特）开始疯狂的焦虑。
@@ -176,15 +176,15 @@ Clash的开发中没有发生许可证的闹剧，早期Clash是MIT后面换了G
 sing-box的作者nekohasekai曾做过大名鼎鼎的SagerNet，可能是觉得做GUI救不了中国人，他转让SagerNet后转头写了sing-box。
 
 sing-box有优秀的节点兼容性，在服务端大火了一把。sing-box普及是在Clash遭遇大洪水后的事情。
-![Pasted image 20260727214425 w-30%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260727214425.webp)
+![Pasted image 20260727214425 w-30%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260727214425.webp)
 <center>*sing-box*</center>
 
 nekohasekai本人简直就是劳模,他的github绿墙简直是在cos地铁的马赛克墙。加上来自著名的艺术家アボガド6的头像其主页的感觉强烈的克制感。事实上这种风格延续在了其开发的项目中。
-![Pasted image 20260801115253](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801115253.webp)
+![Pasted image 20260801115253](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801115253.webp)
 sing-box采用了严格的GPLv3，这导致使用的客户端必须自己也用GPLv3开源。nekohasekai本人很看不惯以纯粹商业动机写GUI的，sing-box的文档中推荐GUI客户端的页面称[^10]“此处没有列出一些声称使用或以 sing-box 为卖点的第三方项目。此类此类项目维护者的动机是获得更多用户，即使它们提供友好的商业 VPN 客户端功能， 但代码质量很差且包含广告。”所以很少用sing-box的GUI客户端。而nekohasekai的解决方法十分**简单粗暴**——**我全做了**
 
 他一人维护了原生的Android，IOS，MAC，[^11]就在最近7月14号他还搞定了Windows客户端。而且nekohasekai的前端水平一样无可挑剔的完美。就拿Android版本说，sing-box-for-android不但是极其现代的MD3应用，还支持了ROOT增强抗检测能力，成功上架了最开源洁癖的f-droid的主仓库，市面仅此一家属于是。
-![Pasted image 20260801150000 w-30%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801150000.webp)
+![Pasted image 20260801150000 w-30%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801150000.webp)
 <center>*Sing-box安卓客户端*</center>
 
 nekohasekai一样无法免俗的有争议——他对代码貌似有近乎偏执的执着，sing-box最受争议的就是sing-box一直在优化性能和追求新的功能但没有考虑用户体验。sing-box对配置文件JOSN的语法偏执的严格，并且语法规范变化极快，很少机场愿意维护适用于sing-box最新版本的配置文件，使用sing-box需要用户自己改JOSN，这大概也是sing-box客户端那么完美还是不流行的原因。
@@ -192,7 +192,7 @@ nekohasekai一样无法免俗的有争议——他对代码貌似有近乎偏执
 nekohasekai引发最大的吵架是[^12]Xray呼吁不要用sing-box，因为nekohasekai对V2ray Xray这群老东西很不屑。还嘲讽很多客户端接机场广告（参见上文）说不过结果是这篇AI写的大字报哪怕发在/Xray-core的讨论组，同温层里结果还是146赞61倒赞。可见又是争议话题
 
 不过令人感叹的是SagerNet项目被nekohasekai交给MatsuriDayo和其他维护者组成Matsuri，Matsuri后来有衍生出nekoray和nekobox，慢慢的neoray停止维护......nekohasekai意外又不意外的促成了sing-box目前最受欢迎的客户端——nekobox。
-![Pasted image 20260801145457 w-30%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801145457.webp)
+![Pasted image 20260801145457 w-30%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260801145457.webp)
 <center>*NEKOBOX*</center>
 
 nekobox的配置比sing-box好写点，nekobox兼容旧的sing-box语法，同时有sing-box内核强大的支持使得其的表现优于Clash和V2ray系的软件。nekobox目前是sing-box最受欢迎的客户端。
@@ -218,11 +218,11 @@ nekobox的配置比sing-box好写点，nekobox兼容旧的sing-box语法，同�
 这类VPN提供商和一般国家以防监控为目的的VPN公司（NordVPN，mullvad之类）这类VPN提供商一般会打“擦边球”比如“XXX加速器”或者叫“XXXVPN”。他们常常不提供下载节点配置，客户端一般是直接集成了简单的代理协议。用户只需要获得额度然后链接就可以了。当然相应的就是用户可以选择的自定义极少。而且客服端不开源，完全无法保证数据案安全性。
 
 这类软件在商业化上比较奇特，有的卖的死贵，往往很烂的线路和更低的自由度可以卖的比中端机场贵，比如大名鼎鼎的快连。本质是在打信息差。
-![Pasted image 20260728142946 w-30%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260728142946.webp)
+![Pasted image 20260728142946 w-30%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260728142946.webp)
 <center>*快连LOGO*</center>
 而有的额度又很慷慨，当然表面的理由是广告收入——不过大家都知道的就是**广告那点收入怎么可能可以覆盖运营成本**，很明显的他们是在卖用户的资讯,也就是钓鱼VPN，其中最著名的就是老王VPN。也就X上的傻逼会在这种原则性问题上吵，[^13]全中国团队运营，没有交流组，不可以导出配置，看NSFW没事，翻墙爱党没事，上敏感网站秒抓。**不是厂商把你的日志卖了还能怎么回事啊？**
 
-![Pasted image 20260728144808 w-50%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260728144808.webp)
+![Pasted image 20260728144808 w-50%](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260728144808.webp)
 <center>*操你妈，我翻墙是看黄的*</center>
 我在我之前做的[隐私卡](https://yinsi.pgntgz.top/create) 中总结为类快连和类老王。
 
@@ -234,7 +234,7 @@ nekobox的配置比sing-box好写点，nekobox兼容旧的sing-box语法，同�
 机场可以说是大多数人的选择了。至今也占据了主流的地位。
 
 机场这是个俗称，机场鱼龙混杂没有统一标准，面板一般是开源的Xboard和SSPanel-UIM改的，我认为一个代理服务商被认定为是机场的核心要素就是其售卖的是可拉取的配置文件
-![Pasted image 20260731120118](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260731120118.webp)
+![Pasted image 20260731120118](https://box.pgntgz.top/posts/gfw2/Pasted%20image%2020260731120118.webp)
 <center>*SSPanel-Uim*</center>
 机场一般售卖配置文件，提供下载配置的URL，一般还会提供QRcode和分应用特化配置链接方便导入。当然有的也会做一个简易的一键使用客户端。不过配置是URL分发才是机场的特点，因为这给用户有很大的自由度，比如选择自己喜欢的代理客服端，比如魔改配置。所以机场和商业VPN有着本质的区别。
 
@@ -261,7 +261,7 @@ nekobox的配置比sing-box好写点，nekobox兼容旧的sing-box语法，同�
 
 ## 现在
 回顾完一圈到了2026年，这一切好像都变了，好像又1️没变
-![万恶之源 w-30%](https://box.pgntgz.org/posts/gfw/gfwhr.avif)
+![万恶之源 w-30%](https://box.pgntgz.top/posts/gfw/gfwhr.avif)
 关于这次打击的来龙去脉也差不多出来整理了，我觉得比较合理的是是泄密事件导致小学生对VPN警惕，促使了GFW的严打。
 
 封禁主要针对国内VPS的中转机场——大多数机场都是在国内中转以统一用户体验的，直接拔线还不退款大大打击了机场的资金流，而不计成本的特征识别增强先是废掉了hysteria2,然后是vless和SS2022。

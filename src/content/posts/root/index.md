@@ -10,7 +10,7 @@ tags:
   - AOSP
   - 教程向
   - 长篇
-image: https://box.pgntgz.org/posts/root/lsp.avif
+image: https://box.pgntgz.top/posts/root/lsp.avif
 ---
  
 [google希望让android变成封闭系统！了解他并做些什么](https://keepandroidopen.org/zh-CN/)
@@ -21,7 +21,7 @@ image: https://box.pgntgz.org/posts/root/lsp.avif
 
 
 从开[上期](https://pgntgz.org/posts/nothing/)结束始吧，建议也看看喵
-![上期](https://box.pgntgz.org/posts/root/上期.webp)
+![上期](https://box.pgntgz.top/posts/root/上期.webp)
 
 
 
@@ -83,7 +83,7 @@ LSP模块仓库是金矿，不过有很多逆向破解模块很容易被DMCA，�
 ---
 
 
-![我的root软件](https://box.pgntgz.org/posts/root/qc.avif)
+![我的root软件](https://box.pgntgz.top/posts/root/qc.avif)
 
 
 ---
@@ -133,11 +133,11 @@ LSP模块仓库是金矿，不过有很多逆向破解模块很容易被DMCA，�
 
 keybox因为难取得且google一直在封，我个人觉得是最难的一环。tg貌似有不少公开的可以试试搜索#Keybox
 
-![keybox](https://box.pgntgz.org/posts/root/keybox.webp)
+![keybox](https://box.pgntgz.top/posts/root/keybox.webp)
 
 ，不过公开的后果就是滥用导致容易过一段时间就容易挂.如果在检查完整性后看到了这样的图片，那恭喜你，keybox可用。依赖play完整性的应用是可用状态了
 
-![恭喜你](https://box.pgntgz.org/posts/root/gx.avif)
+![恭喜你](https://box.pgntgz.top/posts/root/gx.avif)
 
 
 #### 剩下的

@@ -9,7 +9,7 @@ tags:
   - 开源替代
   - 长篇
   - android
-image: https://box.pgntgz.org/posts/bil/-9lddQkk6-ewcxK10T3cSr0-k8.avif
+image: https://box.pgntgz.top/posts/bil/-9lddQkk6-ewcxK10T3cSr0-k8.avif
 ---
 **首先，如果SEO恢复正常(*本站的Google SEO权重尚未超越我的osu！账号，很明显Google觉得相比技术问题，看我的osu！又 
 [[v3]]拿了几个D更棒*)的话，这篇的看客不少应该只想看答案，我就先结果后测评吧**
@@ -63,7 +63,7 @@ image: https://box.pgntgz.org/posts/bil/-9lddQkk6-ewcxK10T3cSr0-k8.avif
 
 ***\* *
 
-![image](https://box.pgntgz.org/posts/bil/photo_2026-05-23_19-18-32.avif)
+![image](https://box.pgntgz.top/posts/bil/photo_2026-05-23_19-18-32.avif)
 * \**
 \****
 
@@ -73,7 +73,7 @@ image: https://box.pgntgz.org/posts/bil/-9lddQkk6-ewcxK10T3cSr0-k8.avif
 
 **白标B是早年B站上架Google play面向海外的版本，已经下架了。 连接：
 鉴于获取有点麻烦，我放个资源链接吧，不过防止滥用，所以在直链我把后缀改了，且R2账单爆了我就删掉了，反正咱小博客。推荐还是用Google硬盘吧 
-[R2直链](https://box.pgntgz.org/%E7%99%BDB) 
+[R2直链](https://box.pgntgz.top/%E7%99%BDB) 
 [Google硬盘](https://drive.google.com/file/d/1F0L6w8kgtcaRo9_ctdQ9MZ9YzKc3tH3d/view?usp=drive_link)**
 
 #### 评测
@@ -95,7 +95,7 @@ image: https://box.pgntgz.org/posts/bil/-9lddQkk6-ewcxK10T3cSr0-k8.avif
 
 ***\* *
 
-![image](https://box.pgntgz.org/posts/bil/photo_2026-05-23_19-18-58.avif)
+![image](https://box.pgntgz.top/posts/bil/photo_2026-05-23_19-18-58.avif)
 * \**
 \****
 
@@ -125,7 +125,7 @@ image: https://box.pgntgz.org/posts/bil/-9lddQkk6-ewcxK10T3cSr0-k8.avif
   ** **
 
   **   
-  ![image](https://box.pgntgz.org/posts/bil/screenshot-2026-05-24_16.25.51.webp)  
+  ![image](https://box.pgntgz.top/posts/bil/screenshot-2026-05-24_16.25.51.webp)  
   **
 
   **\*  \***
@@ -142,7 +142,7 @@ paly2025年1月24日。所以链接我只放github**
 
 ***\* *
 
-![image](https://box.pgntgz.org/posts/bil/photo_2026-05-23_19-20-10.avif)
+![image](https://box.pgntgz.top/posts/bil/photo_2026-05-23_19-20-10.avif)
 * \**
 \****
 
@@ -169,7 +169,7 @@ paly2025年1月24日。所以链接我只放github**
 
 ***\* *
 
-![image](https://box.pgntgz.org/posts/bil/photo_2026-05-23_19-18-31.avif)
+![image](https://box.pgntgz.top/posts/bil/photo_2026-05-23_19-18-31.avif)
 * \**
 \****
 
@@ -198,7 +198,7 @@ paly2025年1月24日。所以链接我只放github**
 
 ***\* *
 
-![image](https://box.pgntgz.org/posts/bil/photo_2026-05-24_15-40-43.avif)
+![image](https://box.pgntgz.top/posts/bil/photo_2026-05-24_15-40-43.avif)
 * \**
 \****
 
@@ -256,7 +256,7 @@ Glass设计我不是很喜欢。哪怕可以在外观设置上改成安卓原生
 
 **
 
-![image](https://box.pgntgz.org/posts/bil/screenshot-2026-05-26_21.40.17.webp)
+![image](https://box.pgntgz.top/posts/bil/screenshot-2026-05-26_21.40.17.webp)
 
 \****
 
@@ -264,7 +264,7 @@ Glass设计我不是很喜欢。哪怕可以在外观设置上改成安卓原生
 
 **
 
-![image](https://box.pgntgz.org/posts/bil/screenshot-2026-05-26_21.41.40.webp)
+![image](https://box.pgntgz.top/posts/bil/screenshot-2026-05-26_21.41.40.webp)
 **
 
 **令人感叹******

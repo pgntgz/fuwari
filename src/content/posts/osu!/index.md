@@ -10,7 +10,7 @@ tags:
   - vulkan
   - 短篇
   - 水
-image: https://box.pgntgz.org/posts/osu!/osu.webp
+image: https://box.pgntgz.top/posts/osu!/osu.webp
 ---
 ## 问题
 最近在Linux最棒的开源音乐播放器osu！打铺总感觉不顺，人嘛，失误了，第一想法肯定是找设备问题。然后我发现我用的竟然是比我大的openGL！于是火速换了vulkan，结果就是画面撕裂了，移动鼠标部分画面就闪烁+撕裂。没截屏，借用一下别人的吧
@@ -24,7 +24,7 @@ image: https://box.pgntgz.org/posts/osu!/osu.webp
 得嘞，自己查吧。osu！仓库果然有相同情况的[议题](https://github.com/ppy/osu/discussions/35961) 
 
 看了下解答
-![github的解决方法](https://box.pgntgz.org/posts/osu!/解决.webp)
+![github的解决方法](https://box.pgntgz.top/posts/osu!/解决.webp)
 果然`vk_wsi_disable_unordered_submits=true` 有用，看来是高负载场景下vulkan乱序提交的锅。照理说到这里就没事了，没必要水一篇。
 
 可是我编辑了`~/.drirc` 和`/etc/drirc` 都没用，貌似是vulkan驱动踢开drirc闹革命导致的，vulkan优先读取系统变量，留下drirc不管了
