@@ -41,7 +41,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "PJSK贴纸",
-			url: "https://pjsk.pgntgz.org/pjsk/",
+			url: "https://pjsk.pgntgz.top/pjsk/",
 			external: true,
 		},
 		{
@@ -53,7 +53,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "/assets/avatar.webp", // Relative to the /src directory. Relative to the /public directory if it starts with "/"
+	avatar: "assets/images/avatar.webp", // Relative to the /src directory. Relative to the /public directory if it starts with "/"
 	name: "pgntgz",
 	bio: " 创造是人类的天性 ",
 	links: [
