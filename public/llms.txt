@@ -1,0 +1,18 @@
+# pgntgz的小站
+
+> 构建于 Fuwari 的一个杂食向技术博客。专注于 GNU/Linux、AOSP Root、代理协议历史、开源生态与技术杂谈。
+
+## 站点核心信息
+- 官方主页: https://pgntgz.org/
+- RSS 订阅: https://pgntgz.org/rss.xml
+- 站点地图: https://pgntgz.org/sitemap-index.xml
+- 作者 Matrix: https://matrix.to/#/@pgntgz:tchncs.de
+- GitHub 组织/仓库: https://github.com/pgntgz
+
+## 精选长文与技术专栏
+- [GFW和代理工具的发展史（下）](https://pgntgz.org/posts/gfw2/): 代理协议与工具发展历史全景梳理与技术解析。
+- [GFW和代理工具的发展史（上）](https://pgntgz.org/posts/gfw/): 早期防火长城与网络代理技术起源。
+- [Vic3模组制作漫谈](https://pgntgz.org/posts/v3/): 维多利亚3 (Victoria 3) 模组开发经验与机制探索。
+- [Android Root漫谈与指南](https://pgntgz.org/posts/root/): 现代 AOSP 与 Android 设备玩机、Magisk / KernelSU 原理。
+- [即刻日记与日常随笔](https://pgntgz.org/diary/): 博主所思所想与技术碎碎念。
+- [关于博主](https://pgntgz.org/about/): 个人技术背景、联系方式与站点声明。
