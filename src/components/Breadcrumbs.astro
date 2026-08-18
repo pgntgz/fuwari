@@ -1,0 +1,59 @@
+---
+import { Icon } from "astro-icon/components";
+import { url } from "../utils/url-utils";
+
+interface Props {
+	category?: string;
+	title: string;
+}
+
+const { category, title } = Astro.props;
+
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "首页",
+			"item": "https://pgntgz.org/"
+		},
+		...(category ? [{
+			"@type": "ListItem",
+			"position": 2,
+			"name": category,
+			"item": `https://pgntgz.org/archive/?category=${encodeURIComponent(category)}`
+		}] : []),
+		{
+			"@type": "ListItem",
+			"position": category ? 3 : 2,
+			"name": title,
+			"item": Astro.url.href
+		}
+	]
+};
+---
+
+<!-- Breadcrumb Schema for Google SERP Rich Snippets -->
+<script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+<!-- Visual Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 text-xs md:text-sm text-black/40 dark:text-white/40 mb-3 overflow-hidden text-ellipsis whitespace-nowrap">
+	<a href={url("/")} class="hover:text-[var(--primary)] transition flex items-center gap-1">
+		<Icon name="material-symbols:home-outline-rounded" class="text-base" />
+		<span>首页</span>
+	</a>
+	<Icon name="material-symbols:chevron-right-rounded" class="text-sm text-black/20 dark:text-white/20 shrink-0" />
+	{category && (
+		<>
+			<a href={url(`/archive/?category=${encodeURIComponent(category)}`)} class="hover:text-[var(--primary)] transition shrink-0">
+				{category}
+			</a>
+			<Icon name="material-symbols:chevron-right-rounded" class="text-sm text-black/20 dark:text-white/20 shrink-0" />
+		</>
+	)}
+	<span class="text-black/60 dark:text-white/60 truncate font-medium" aria-current="page">
+		{title}
+	</span>
+</nav>

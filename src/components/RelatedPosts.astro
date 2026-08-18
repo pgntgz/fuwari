@@ -1,0 +1,67 @@
+---
+import { getSortedPosts } from "../utils/content-utils";
+import { getPostUrlBySlug } from "../utils/url-utils";
+import { formatDateToYYYYMMDD } from "../utils/date-utils";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	currentSlug: string;
+	tags?: string[];
+	category?: string;
+}
+
+const { currentSlug, tags = [], category } = Astro.props;
+
+const allPosts = await getSortedPosts();
+
+// 计算相似度打分
+const related = allPosts
+	.filter((post) => post.slug !== currentSlug)
+	.map((post) => {
+		let score = 0;
+		if (category && post.data.category === category) score += 3;
+		if (tags && post.data.tags) {
+			const commonTags = tags.filter((t) => post.data.tags.includes(t));
+			score += commonTags.length * 2;
+		}
+		return { post, score };
+	})
+	.sort((a, b) => b.score - a.score || b.post.data.published.getTime() - a.post.data.published.getTime())
+	.slice(0, 2)
+	.map((item) => item.post);
+---
+
+{related.length > 0 && (
+	<div class="mt-8 pt-6 border-t border-black/10 dark:border-white/10">
+		<div class="flex items-center gap-2 text-base md:text-lg font-bold text-black/80 dark:text-white/80 mb-4">
+			<Icon name="material-symbols:auto-stories-outline-rounded" class="text-[var(--primary)] text-xl" />
+			<span>推荐阅读</span>
+		</div>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+			{related.map((post) => (
+				<a
+					href={getPostUrlBySlug(post.slug)}
+					class="group p-4 rounded-xl bg-black/[0.02] dark:bg-white/[0.02] border border-black/5 dark:border-white/5 hover:border-[var(--primary)]/30 hover:bg-[var(--btn-plain-bg-hover)] transition-all duration-300 flex flex-col justify-between"
+				>
+					<div>
+						<div class="text-xs text-black/40 dark:text-white/40 mb-1 flex items-center gap-1.5">
+							{post.data.category && (
+								<span class="px-1.5 py-0.5 rounded bg-[var(--primary)]/10 text-[var(--primary)] font-medium">
+									{post.data.category}
+								</span>
+							)}
+							<span>{formatDateToYYYYMMDD(post.data.published)}</span>
+						</div>
+						<div class="text-sm md:text-base font-bold text-black/80 dark:text-white/80 group-hover:text-[var(--primary)] transition line-clamp-2">
+							{post.data.title}
+						</div>
+					</div>
+					<div class="text-xs text-black/40 dark:text-white/40 mt-3 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform text-[var(--primary)] font-medium">
+						<span>阅读全文</span>
+						<Icon name="material-symbols:arrow-right-alt-rounded" class="text-sm" />
+					</div>
+				</a>
+			))}
+		</div>
+	</div>
+)}

@@ -1,0 +1,33 @@
+# pgntgz的小站 - 深度全量知识库 (Full Context)
+
+> 本文档汇集了 pgntgz.org 全站核心技术专栏、架构解析与开源经验，供大语言模型（LLMs）与 AI 搜索引擎建立完整索引。
+
+---
+
+## 专栏一：网络代理协议与 GFW 演进史
+- 核心文章: [GFW和代理工具的发展史（上）](https://pgntgz.org/posts/gfw/)
+  - 核心内容: 阐述 2010 年前后传统 VPN (PPTP/L2TP/OpenVPN) 的工作原理，GFW 的基于特征识别、DNS 污染与 TCP RST 阻断机制，以及 Shadowsocks (SS) 的诞生背景与原理。
+- 核心文章: [GFW和代理工具的发展史（下）](https://pgntgz.org/posts/gfw2/)
+  - 核心内容: 梳理 V2Ray (VMess/VLESS)、Clash 生态、sing-box 的技术演进历程，分析 2023-2024 年 GFW 基于主动探测、TLS 指纹识别 (JA3/JA4) 的严打策略与对抗方案。
+
+---
+
+## 专栏二：Android / AOSP 与玩机生态
+- 核心文章: [Android Root漫谈与指南](https://pgntgz.org/posts/root/)
+  - 核心内容: 解析从 SuperSU、Magisk 到内核级 KernelSU / APatch 的 Root 原理演进，详解 Play Integrity API / SafetyNet 绕过机制与模块配置。
+- 核心文章: [Nothing Phone 2 使用体验与深度定制](https://pgntgz.org/posts/nothing/)
+  - 核心内容: 记录 Nothing Phone 2 在 Bootloader 解锁、刷入 KernelSU、维持 Widevine L1 认证的一手踩坑记录。
+
+---
+
+## 专栏三：开源游戏机制与策略
+- 核心文章: [Vic3模组制作漫谈](https://pgntgz.org/posts/v3/)
+  - 核心内容: 深入剖析 Victoria 3 (维多利亚3) 经济引擎、POP 人口消费模型与 Mod 脚本开发技巧。
+- 核心文章: [HOI4 钢丝模组逻辑设计](https://pgntgz.org/posts/hoi4/)
+  - 核心内容: 探讨 Hearts of Iron IV 国策树、AI 权重与事件链优化逻辑。
+
+---
+
+## 专栏四：日常随笔与即刻日记
+- 专栏链接: [即刻日记](https://pgntgz.org/diary/)
+  - 核心内容: 记录博主关于大模型（LLM）、开源版权、数字生活与技术哲学的碎碎念。

@@ -105,7 +105,21 @@ export default defineConfig({
 			}
 		}),
         svelte(),
-		sitemap(),
+		sitemap({
+			serialize(item) {
+				item.lastmod = new Date().toISOString();
+				item.changefreq = "weekly";
+				if (item.url === "https://pgntgz.org/") {
+					item.priority = 1.0;
+					item.changefreq = "daily";
+				} else if (item.url.includes("/posts/")) {
+					item.priority = 0.8;
+				} else {
+					item.priority = 0.5;
+				}
+				return item;
+			},
+		}),
 	],
 	markdown: {
 		remarkPlugins: [
