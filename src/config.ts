@@ -10,6 +10,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "pgntgz的小站",
 	subtitle: "一个中转&空间&私货的杂烩",
+	description: "构建于 Fuwari 的一个杂食向博客。\n可能包括 GNU/linux，AOSP root，小项目中转等。",
 	lang: "zh_CN", // Language code, e.g. "en", "zh_CN", "ja", etc.
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -31,6 +32,18 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		{
+			src: "/favicon/favicon-48.png",
+			sizes: "48x48",
+		},
+		{
+			src: "/favicon/favicon-96.png",
+			sizes: "96x96",
+		},
+		{
+			src: "/favicon/favicon-192.png",
+			sizes: "192x192",
+		},
+		{
 			src: "/favicon.ico",
 		},
 	],
@@ -40,6 +53,11 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
+		{
+			name: "日记",
+			url: "/diary/",
+			icon: "material-symbols:edit-note-outline-rounded",
+		},
 		LinkPreset.About,
 		{
 			name: "PJSK贴纸",

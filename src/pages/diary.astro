@@ -1,0 +1,92 @@
+---
+import { Icon } from "astro-icon/components";
+import { siteConfig } from "../config";
+import { getDiaryList, getDiaryStats } from "../data/diary";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const moments = getDiaryList();
+const diaryStats = getDiaryStats();
+
+function formatTime(dateString: string): string {
+	const now = new Date();
+	const date = new Date(dateString);
+	const diffInMinutes = Math.floor((now.getTime() - date.getTime()) / (1000 * 60));
+
+	if (diffInMinutes < 60) {
+		return `${Math.max(1, diffInMinutes)} 分钟前`;
+	}
+	if (diffInMinutes < 1440) {
+		const hours = Math.floor(diffInMinutes / 60);
+		return `${hours} 小时前`;
+	}
+	const days = Math.floor(diffInMinutes / 1440);
+	if (days < 30) {
+		return `${days} 天前`;
+	}
+	return date.toLocaleDateString("zh-CN", { year: "numeric", month: "2-digit", day: "2-digit" });
+}
+---
+
+<MainGridLayout title="日记" description="即刻碎碎念与日常随笔">
+	<div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32 mb-4">
+		<div class="card-base z-10 p-6 md:p-8 relative w-full">
+			<!-- Header -->
+			<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pb-6 mb-6 border-b border-black/10 dark:border-white/10">
+				<div>
+					<div class="flex items-center gap-2.5 text-2xl md:text-3xl font-bold text-black/90 dark:text-white/90">
+						<Icon name="material-symbols:edit-note-outline-rounded" class="text-[var(--primary)] text-3xl md:text-4xl" />
+						<span>日记随笔</span>
+					</div>
+					<p class="text-sm md:text-base text-black/50 dark:text-white/50 mt-1">记录所思所想，即刻日常碎碎念</p>
+				</div>
+				<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-black/5 dark:bg-white/5 text-sm font-medium text-black/70 dark:text-white/70">
+					<Icon name="material-symbols:article-outline" class="text-[var(--primary)] text-lg" />
+					<span>共记录 <strong>${diaryStats.total}</strong> 条瞬间</span>
+				</div>
+			</div>
+
+			<!-- Moments List -->
+			<div class="space-y-6">
+				{moments.map((moment) => (
+					<div class="p-5 md:p-6 rounded-2xl bg-black/[0.02] dark:bg-white/[0.02] border border-black/5 dark:border-white/5 hover:border-[var(--primary)]/30 transition-all duration-300">
+						<!-- Content -->
+						<p class="text-black/85 dark:text-white/85 text-base md:text-lg leading-relaxed whitespace-pre-wrap font-normal">
+							{moment.content}
+						</p>
+
+						<!-- Images -->
+						{moment.images && moment.images.length > 0 && (
+							<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4">
+								{moment.images.map((image) => (
+									<div class="relative rounded-xl overflow-hidden aspect-video bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 group">
+										<a href={image} target="_blank" rel="noopener noreferrer" class="block w-full h-full">
+											<img
+												src={image}
+												alt="Diary photo"
+												class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+												loading="lazy"
+											/>
+										</a>
+									</div>
+								))}
+							</div>
+						)}
+
+						<!-- Footer -->
+						<div class="flex justify-between items-center mt-4 pt-3 border-t border-black/5 dark:border-white/5 text-xs md:text-sm text-black/40 dark:text-white/40">
+							<div class="flex items-center gap-1.5">
+								<Icon name="material-symbols:schedule-outline" class="text-base text-[var(--primary)]" />
+								<time datetime={moment.date} title={moment.date}>{formatTime(moment.date)}</time>
+								<span class="text-black/20 dark:text-white/20">|</span>
+								<span>{moment.date.replace("T", " ")}</span>
+							</div>
+							<div class="text-xs font-mono text-black/30 dark:text-white/30">
+								#{moment.id}
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</div>
+</MainGridLayout>

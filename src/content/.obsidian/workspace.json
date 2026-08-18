@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "spec/about.md",
+                "file": "posts/gfw2/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "index"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "spec/about.md",
+                "file": "posts/gfw2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "spec/about.md",
+                "file": "posts/gfw2/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "spec/about.md",
+                "file": "posts/gfw2/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,10 +190,16 @@
   },
   "active": "1ac3ef718c12633b",
   "lastOpenFiles": [
+    "posts/osu!/index.md",
+    "posts/nothing/index.md",
     "posts/v3/index.md",
     "posts/导航.md",
+    "posts/fy/index.md",
+    "posts/bil/index.md",
+    "posts/hoi4/index.md",
+    "posts/root/index.md",
+    "posts/gfw2/index.md",
     "spec/about.md",
-    "posts/shur/index.md",
-    "posts/fy/index.md"
+    "posts/shur/index.md"
   ]
 }
