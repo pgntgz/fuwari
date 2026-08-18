@@ -1,10 +1,10 @@
-原项目源地址[Mizuki](https://github.com/matsuzaka-yuki/mizuki) 感谢所有开源贡献者
-我的fork[pgntgz](https://github.com/pgntgz/Mizuki)
+构建于[Fuwari](https://github.com/saicaca/fuwari) 感谢所有开源贡献者
+我的构建版本仓库[pgntgz](https://github.com/pgntgz/fuwari)
 
 ##### 我是谁？
 我的昵称叫pgntgz
 
-这个昵称没有任何意义，它是完全随机的，因此其实我也不知道该怎么发音。
+这个昵称没有任何意义，它是完全随机出来的，其实我也不知道该怎么发音。
 
 你可以全全拼或者简单称我为LP
 
@@ -24,16 +24,16 @@
 ##### 我的基本情况：
 
 - 爱好：Arch GNU/Linux使用者，目前的配置是hyprland+end-4。杂食动物，有意思的技术实现都会想要玩玩的那种~~（典型的又菜又爱玩）~~
-- 娱乐爱好：半退坑烤批，现在主要在玩osu！STEAM比较杂食，HOI4和吸血鬼幸存者，2077都有玩。番剧情况参见追番页面，不过时间线有点乱，因为我的BGM.TV很晚才用
+- 娱乐爱好：半退坑烤批，现在主要在玩osu！STEAM比较杂食，HOI4和吸血鬼幸存者，2077都有玩。番剧情况参见同名邦谷米页面，不过时间线有点乱，因为我的BGM.TV很晚才用
 - 社群媒体：前推特难民，现在社交媒体挺少的其实，主要是在看reddit，有用mastodon但不发文。
 - 移动设备：nothing使用者，很明显是为了root
-- 政治倾向：反8建2 左逼，进步党，要套标签的话接近社民和民社，工业党（首页引用马前卒有点幽默）我支持建立在可靠政府下的北欧经济模式和数字法律，支持中国民主化
+- 政治倾向：反8建2 左逼，进步党，硬要套标签的话接近社民和民社，工业党，我支持建立在可靠政府下的北欧经济模式和数字法律，我支持和期望中国实现民主化
 - 其他：- 某种意义上的二次元 - INTP - Bisexual
 
 
 ##### 这里是什么
 我的定义是：一个中转&空间&私货的杂烩
-技术上这是一个[astro](https://astro.build/)建构的bolg，挂在Cloudflare上，用的是[Mizuki](https://github.com/matsuzaka-yuki/mizuki) 模板，我的[fork](https://github.com/pgntgz/Mizuki)源代码和内容全部开源在这里
+技术上这是一个[astro](https://astro.build/)建构的bolg，主题套用了[Fuwari](https://github.com/saicaca/fuwari)模板，我的构建源代码和内容全部开源在[fork](https://github.com/pgntgz/Mizuki) ，本站由cloudflare的Pages构建
 
 
 可能包含以下内容
@@ -60,13 +60,15 @@
 日记会随缘写写
 ##### 找我？
 
-你可以使用任何自己喜欢的Matrix客户端联系我，我自己喜欢KDE的[NEOCHAT](https://apps.kde.org/zh-tw/neochat/)
-
 我的Matrix ID是
 
 `@pgntgz:tchncs.de`
 
-想要方便的联系加我的[dc](https://discord.com/users/1293906307232825497) 就是了
+你可以使用任何自己喜欢的Matrix客户端联系我
+
+追求完全同一体验可以试试KDE的[NEOCHAT](https://apps.kde.org/zh-tw/neochat/)
+
+想要更加简单的联系加我的[dc](https://discord.com/users/1293906307232825497) 就是了
 
 tg和墙内账号不公开
 
@@ -98,22 +100,29 @@ osu！ID ：pgntgz
 
 steam：pgntgz (好友代码:1762337426)
 
+如果你愿意，欢迎为我报销域名费用和给予额外的创作鼓励
+
+`USDT（Pos）0x524aD810F4fe2808B235bcC2B45ABBf4df18F55C`
+
+`XMR：45RBGeSWwLe22o8iujLRax2sZP4LULu1vF1USyFkrAPs7TfhU2FatrB1DgdVEgSrmqHLkVP5nYDSvgHQbeQUqci63tUoxtS`
+
+
 ##### 为什么要做这种事情？
 人是一种喜欢创造的生物，我也一样，**但是我不想要流量焦虑**，我曾经也在kdenlive做过视频，但剪辑好但从未发出，我不知道我在想什么，可能为了创作查资料，仔细观看版权协议本身并且克服困难本身就在满足我。但流量焦虑和社交平台属性让人讨厌，让我怀疑我创作的动机。
 
 我在上网时发现令我沮丧的事情是中文社区的知识创作不但变得越来越少而且正在**圈化**，具体的体现就是内容被分布在各个分散且封闭的平台，这是大公司们的锅，很明显。比如字节跳动和META，大家都想把用户困在自己的一亩三分地，焦虑啊仇恨啊..........而且OPEN WEB正在毁灭，大多数内容极其SEO不友好，使得查证已死。
 
-我当然不是什么大佬，我做的就是分享一点点自己的折腾，不过起码我想如果我自己要在折腾能搜下Google，看到这些内容应该会挺不错，所有我想如果我要创作什么都话，我希望他可以被公开搜索到。
+我当然不是什么大佬，我做的就是分享一点点自己的折腾，不过起码我想如果我自己要在折腾能搜下Google，看到这些内容应该会挺不错，所有我想如果我要创作什么都话，我希望他可以被公开搜索到。试试上的确我自己在忘掉啥东西时也会回来看看自己的文章
 
-流量焦虑是我很讨厌的，会异化我的热情导向的创作，所有我对我的Blog的流量要求其实就是被Google和bing索引到就完事了。我启用了cloudflare的Web Analytics看一下基本的性能情况，其实这玩意其实基本没啥参考价值，回报的数据基本就没有对上过，估计是看我的blog的受众大概都打了UBO和 NoScript。除了Web Analytics然后就没有了，我不打算加入更多的监控了，not Cookie，not FOMO。
+流量焦虑是我很讨厌的，会异化我的热情导向的创作，所以我对我的Blog的流量要求其实就是被Google和bing索引到就完事了。我启用了cloudflare的Web Analytics看一下基本的性能情况。不过懂的都懂，这玩意其实基本没啥参考价值，回报的数据基本就没有对上过。毕竟估计是看我的blog的受众大概都打了UBO和 NoScript。除了Web Analytics然后就没有了，我不打算加入更多的监控了，not Cookie，not FOMO。
 
-最自由的创作方式很明显就是自己做个blog，我可以不用担心内容审查，反正cloudflare不管。我可以选择自由的表现形式，用MD+HTML必要时候还可以改改CSS和JS，或许还可以关几个Astro插件。流量焦虑是没有的，因为流量是不可控不可量化的。
+最自由的创作方式很明显就是自己做个blog，我可以不用担心内容审查，反正cloudflare不管。我可以选择自由的表现形式，用MD+HTML，自由的使用格式，插入内容，必要时候还可以改改CSS和JS，或许还可以开关几个Astro插件。流量焦虑更是没有的，因为网站流量是不可控且不可量化的。
 
 这就是我的核心观点，更多的有时间再写。
 
 ##### 版权与免责声明
-- 此网站是组合项目，源码开源，主体代码继承Mizuki项目的 [Apache License, Version 2.0开放源代码许可证](https://www.apache.org/licenses/LICENSE-2.0)  **部分GPL组件继承使用的相应版本的GPL许可证**不影响主体。未做声明的部分均沿用Mizuki的声明
-- 我不拥有网站首页图片的他们版权©，其中部分属于osu！和创作者，部分属于Project Sekai的版权方或其他被引用作者，**如果违反合理使用规则请联系我删除**
+- 此网站是组合项目，源码开源，主体代码继承Fuwari项目的[MIT许可证](https://mit-license.org/) 部分GPL授权的组件继承其使用的相应版本的GPL许可证不影响主体。未做声明的冲突部分均沿用原Fuwari项目的声明
+- 我不拥有网站首页图片的他们版权©，其中部分属于osu！和创作者，部分属于Project Sekai的版权方或其他被引用作者，引用符合相应的引用条款**但如果违反其他合理使用规则请联系我删除**
 - 网站头像使用ai生成，参考了Yoisaki Kanade，鉴于合理使用规则，提示词没有投喂完整特征图片和具体人名和knd具体特征的提示词，并且刻意修改了很多明显特征，我不认为ai创作拥有版权，**所以相应的我不主张其版权** 如承认则为CC0作品
-- 无特殊声明本人在此站发布的原创内容均使用[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)（知识共享 署名 非商业 相同方式共享 4.0）发布，~~虽然都是些大粪~~ 
+- 无特殊声明本人在此站发布的原创内容均使用[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)（知识共享 署名 非商业 相同方式共享 4.0）授权发布，欢迎合理的引用和分享我的文章，我荣幸至极
 
