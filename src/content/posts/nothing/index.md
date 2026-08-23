@@ -10,7 +10,7 @@ tags:
   - AOSP
   - 教程向
   - 长篇
-image: https://box.pgntgz.top/posts/nothing/py.avif
+image: https://box.pgntgz.org/posts/nothing/py.avif
 ---
 [google希望让android变成封闭系统！了解他并做些什么](https://keepandroidopen.org/zh-CN/)
 
@@ -128,11 +128,11 @@ content://settings/secure --bind name:s:user_setup_complete --bind value:s:1`就
 连接PC一般会出现一个ADB授权弹窗，允许你的设备调试**
 
 **
-![image](https://box.pgntgz.top/posts/nothing/ADB1.avif)
+![image](https://box.pgntgz.org/posts/nothing/ADB1.avif)
  然后测试连接`adb devices`
 返回设备信息就可以下一步重启`adb reboot bootloader 正常就会进fastboot 运行解锁命令`fastboot flashing
 unlock 这时候会出现下面的画面 
-![image](https://box.pgntgz.top/posts/nothing/bl.avif)
+![image](https://box.pgntgz.org/posts/nothing/bl.avif)
  图
 ：BL解锁页面 ⚠️解锁会清除数据，请确定重要内容的备份 接下来****
 
@@ -161,20 +161,20 @@ unlock 这时候会出现下面的画面
 这里收录了几乎所有nothing机器root需要的资源，以我的3A为例，在设置>关于本机>nothing os>找到你的小版本号**
 
 **\** 
-![image](https://box.pgntgz.top/posts/nothing/bbh.webp)
+![image](https://box.pgntgz.org/posts/nothing/bbh.webp)
  \****
 
 ### 获取boot文件
 
 **\**接下来在[nothing档案馆](https://github.com/spike0en/nothing_archive)
 下拉到下载区找到对应版本的 OTA Images 
-![image](https://box.pgntgz.top/posts/nothing/xz.webp)
+![image](https://box.pgntgz.org/posts/nothing/xz.webp)
 **
 
 **下载大概30m的boot就可以了，比如我的 
 [Asteroids_B4.0-260225-1824-image-boot.7z](https://github.com/spike0en/nothing_archive/releases/download/Asteroids_B4.0-260225-1824/Asteroids_B4.0-260225-1824-image-boot.7z)
 解压缩会得到 
-![image](https://box.pgntgz.top/posts/nothing/bo.webp)
+![image](https://box.pgntgz.org/posts/nothing/bo.webp)
 **
 
 **我们要的就是init_boot.img,貌似不少较老的设备都是boot.img,市面上的教程大多都是boot.img区别就是`init_boot`：存放的是

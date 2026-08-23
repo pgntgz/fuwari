@@ -8,13 +8,13 @@ tags:
   - 长篇
   - 代理协议
   - 开源替代
-image: https://box.pgntgz.top/posts/gfw/gfw.webp
+image: https://box.pgntgz.org/posts/gfw/gfw.webp
 ---
 ### 开头
 
 最近，GFW开始了有史以来最强的封锁，几乎所有中国大陆的VPS厂商或多或少都受到了影响。不同与传统的“咱妈来大姨妈了”一年几乎总要来的那几次的敏感期相比，这次从4-8的网信办会议后，开始的打击几乎是GFW建立以来最强影响了所有人。
 
-具体很多手段，但最强的当然就是VPS拔线，最疯狂的行政手段，也是这次网络灾难最重要的原因让几乎主流的依赖国内中转的代理机场几乎全军覆没。![万恶之源 w-30%](https://box.pgntgz.top/posts/gfw/gfwhr.avif)
+具体很多手段，但最强的当然就是VPS拔线，最疯狂的行政手段，也是这次网络灾难最重要的原因让几乎主流的依赖国内中转的代理机场几乎全军覆没。![万恶之源 w-30%](https://box.pgntgz.org/posts/gfw/gfwhr.avif)
 
 关于这次封锁的原因和啥时候正常到现在还是众说纷纭。
 
@@ -80,7 +80,7 @@ google同意调整部分网站SEO权重封锁部分词条，相应的Google要�
 以Google为主轴，显然这段时间外国企业在中国的运营并不是一帆风顺。Google在中国一直较有原则，拒绝手动干预，封锁也要走Google的机器流程，使得Google上许多官员的或真或假的传闻广泛传播,并且不能“一个电话就封了”。这深深得罪了许多官员，慢慢的，Google为代表的外国网络企业长期爆出不良传闻。
 
 当年6月绿坝计划破产，变成笑话——GFW觉得在骨干网拦截太累了，干脆要求所有在华销售的电脑出厂预装拦截软件。结果就是引来了全国强烈反弹，[^4]只留下一个绿毛娘给我打手枪。
-![咱是全年龄blog还是打个码把 w-30%](https://box.pgntgz.top/posts/gfw/lbh1.avif)
+![咱是全年龄blog还是打个码把 w-30%](https://box.pgntgz.org/posts/gfw/lbh1.avif)
 
 从此GFW思路转向网络封锁。
 
@@ -88,7 +88,7 @@ google同意调整部分网站SEO权重封锁部分词条，相应的Google要�
 
 #### 非法献花
 [^3]虽然真相是这是明显的SEO污染，这种节目纯粹在侮辱中国人的智商。这些低俗的搜索结果的搜索请求全部来自北京，且都在节目发布的几天。
-![这些低俗的搜索结果的搜索请求全部来自北京](https://box.pgntgz.top/posts/gfw/xhgoogle.avif)
+![这些低俗的搜索结果的搜索请求全部来自北京](https://box.pgntgz.org/posts/gfw/xhgoogle.avif)
 
 有人说一定是涛哥的阴谋，有人说就是商战，百度怎么这么坏啊。有人说是为了给老习铺路，轮子还说薄熙来也干了。
 
@@ -109,7 +109,7 @@ google同意调整部分网站SEO权重封锁部分词条，相应的Google要�
 这篇文章发布到3月Google搬迁到香港，Google彻底如它所说的在死前放飞了自我，尽管当时中国政府已经先发治人进行了DNS污染，但滞后性和草台班子性依然存在。而这段时间Google.cn不再维护审查词库，后来干脆直接重定向到了Google.hk
 
 [^6]于此同时北京市民自发前往Google总部献花，促成了知名的非法献花事件
-![非法献花](https://box.pgntgz.top/posts/gfw/ffxf.avif)
+![非法献花](https://box.pgntgz.org/posts/gfw/ffxf.avif)
 
 
 不得不说Google 2015年股权重构就把“Don't be evil”调到了很后面，毕竟Google本质是一家商业公司，但**终Google在中国，Google算坚守了自己的底线**。
@@ -117,7 +117,7 @@ google同意调整部分网站SEO权重封锁部分词条，相应的Google要�
 笔者到北京时，那块被“非法献花”的石碑早就没了。跟着地图走结果只拍到了微软，最后无功而反。
 
 后来才知道Google中国已经不悬挂Google loge了。不免感叹物是人非。
-![他大抵是死了](https://box.pgntgz.top/posts/gfw/googlesl.webp)
+![他大抵是死了](https://box.pgntgz.org/posts/gfw/googlesl.webp)
 
 到了10年这个时间点google.cn已经死翘翘了，对于我这个00后，到了我上网的年纪我对Google唯一的印象就是Google翻译。不过Google翻译服务也在2022年彻底走入历史舞台，从此Google在中国大陆就再没有面向普通用户且未被封禁的网络服务。
 
@@ -187,7 +187,7 @@ GoAgent的路线已在有了加密代理的味，代理加密shadowsocks和特�
 后续有人维护西厢计划2阶段和3阶段，不过只是继承名字，连许可证都变成BSD了。
 
 不过特征识别的路线已经在这时候被点亮了，加密代理在不断的发展，一直到——12年4月22日clowwindy发布了影响至今的shadowsocks（V2EX现在也变成太监论坛了，令人感叹）
-![SS发布](https://box.pgntgz.top/posts/gfw/SSJL.webp)
+![SS发布](https://box.pgntgz.org/posts/gfw/SSJL.webp)
 
 如果说鸦片战争分割了中国古代和近代，我想shadowsocks就是鸦片战争时刻。从此现在我们熟悉的时代的雏形开始形成了。
 

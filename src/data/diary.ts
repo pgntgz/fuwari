@@ -1,221 +1,78 @@
-// 日记数据配置
-// 用于管理日记页面的数据
+import fs from "node:fs";
+import path from "node:path";
 
 export interface DiaryItem {
-  id: number;
-  content: string;
-  date: string;
-  images?: string[];
-  location?: string;
-  mood?: string;
-  tags?: string[];
+	id: number;
+	date: string;
+	content: string;
+	images?: string[];
+	tags?: string[];
 }
 
-// 示例日记数据
-const diaryData: DiaryItem[] = [
-  {
-    id: 1,
-    content:
-      "为了酒馆买的5刀grok,结果发现grok输出特别适合在galqq，聊人表现特别的棒，我真他妈怀疑老马偷推特的文爱记录练ai了。grok个人感觉逻辑能力是真的差，不过可能因为开放nsfw训练资料吧，情商和淫商表现巨好。希望开放nsfw的厂商越来越多",
-    date: "2026-04-01T20:51:00Z",
-    images: [],
-  },
-  {
-    id: 2,
-    content:
-      "妈的Mundfish会不会做机制？没有人喜欢你那个沟槽的响指锁，还有有效提高游戏难度系数的贪吃蛇。",
-    date: "2026-04-06T15:05:00Z",
-    images: [],
-  },
-  {
-    id: 3,
-    content:
-      "奇异搞笑了，搞不懂byd DC为啥要是双击自动回应上次使用的表情，这才后知后觉的发现自己因为沟槽的误触给一堆无关内容回复了🇹🇼",
-    date: "2026-04-07T19:14:00Z",
-    images: [],
-  },
-  {
-    id: 4,
-    content:
-      "嚯嚯嚯，Strong Keybox Official竟然真的有三绿的key,不过大概一段时间就会过期吧",
-    date: "2026-04-18T23:34",
-    images: [],
-  },
-  {
-    id: 5,
-    content:
-      "个人原因鸽了20天整啊，不过Google还没给我引流，我的SEO权重依旧被OSU账号吊打，好像也没事就是了。这下必须更了，GFW下不想更新，主要最近政策变化的太快，等到稳定点（或许64后？）再更，考虑更一个哔哩哔哩第三方客户端的评测，哦，对了，该管管SEO问题了",
-    date: "2026-05-10T22:23",
-    images: [],
-  },
-  {
-    id: 6,
-    content:
-      "希望gurubot/self-after-dark这种专注单一领域非微调而是直接面对NSFW需求的的LLM模型多一点，这个8b的参数模型真的惊艳到我，可惜我英文烂。",
-    date: "2026-05-11T18:46",
-    images: [],
-  },
-  {
-    id: 7,
-    content:
-      "熬夜看了Android Show 2026....液态玻璃loga吓人一跳，不过Google看了没有去全盘果化，MD3还是主要，只是Gemini intelligence加了，有点看不下去了，还有emoji新版本真的丑，不过自订微件看起来不错？",
-    date: "2026-05-13T01:31",
-    images: [],
-  },
-  {
-    id: 8,
-    content:
-      "真讨厌那种看不得自己角色色图还攻击作者的，没有人逼你看这玩意，你完全可以屏蔽，不涉及儿少暴力和一览子歧视问题我觉得都是创作自由，当然，前提是版权方没意见。别人爱画什么管你鸟事情",
-    date: "2026-06-17T00:14",
-    images: [],
-  },
-  {
-    id: 9,
-    content:
-      "熬夜看了GoogleIO2026Google要在多模态一条路走到黑了啊，ai，ai，ai，gmini新的UI丑，其他都挺惊艳的说实话，有意思的是gemini3.5首发就是GA,我们亲爱的3,0还是预览版",
-    date: "2026-05-20T02:40",
-    images: [],
-  },
-  {
-    id: 10,
-    content:
-      "发现幽默的一点是Google flow免费账户每天是50免费点数每天刷新，但当你买了20美元的PRO你一个月就是固定1000点，花20刀少500点，虽说多了可额外买和gemini生成，还是感觉有点幽默",
-    date: "2026-05-28T20:40",
-    images: [],
-  },
-  {
-    id: 10,
-    content:
-      "马斯克死妈妈了，grok大概今年3.4月份的时候就在没有邮件或任何方式通知开发者的情况下把过滤器调的贼鸡巴严。更死妈的另一个更新是非思考模型NSFW请求会被罚Usage guidelines violation，而且一次就是5美分，并且被罚同样没有邮件和任何通知，只有翻月底的账单会有巨小一行告诉你。grok NSFW内容的文笔确实更好，但就现在这个过滤器就算了吧。只要稍微BDSM就说涉及暴力，角色提示词里必须说已经满了18岁，还要提心吊胆会不会被罚钱。",
-    date: "2026-06-07T21:09",
-    images: [],
-  },
-  {
-    id: 11,
-    content:
-      "感觉大概有半年没怎么用推特，今天闲得没事用别人的号开了一会，结论就是真傻逼。就是说不是咱歧视lgbt，我自己就是lgbt，但我是真的·不理解中国的大概80%的MTF怎么他妈都是个NPC，做的事情就是注册一个被已经傻逼马斯克收购的推特，会做的事情把一万年前的梗图拿出来每年重新发一次，配一个不同的文，就当是新的。不但不好笑而且很多梗简直是他妈刻板印象制造机，还有巨他妈讨厌的就是路径依赖，一帮人谁的创意火了就他妈抄来抄去，在可能很久我还是会倾向于远离社交媒体。",
-    date: "2026-06-23T19:01",
-    images: [],
-  },
-  {
-    id: 12,
-    content:
-      "石墙暴动56周年！骄傲日快乐，虽然一般都是庆祝真个6月。emmm，不过骄傲月看样子估计不会有第二片长文章了（同时也是考试月）",
-    date: "2026-06-28T18:35",
-    images: [],
-  },
-  {
-    id: 13,
-    content:
-      "原文：作为一个艺术家，看到这个事件过程让我最惊讶和不理解的地方是，对岸都那么玻璃心吗？拿AI作品和艺术家的作品比较就冒犯到艺术家了？艺术家不应该是开放的心态去关注、研究或者掌握作为工具的AI么？AI也只是个工具而已，和艺术家手中的画笔一样的属性。为什么比较一下就被骂了，就被冒犯了？理解不了。\n神了，国人AI观都这个B样子吗？真魏大勋我操，那个企业敢说自己的AI的资料没有未经同意训练人类创作的数据？拿着违规的抄袭你作品的者恬不知耻嘲讽你：“你看做的没有我好“，怎么就不冒犯了？还要人家“开放的心态”，抄袭的不是你，你当然开放心态了。还艺术家，我看像安装了codex就嘲讽RMS是老古板，安装antigravity觉得Eric S不懂大而美的“天才程序员” 我的观点就是所有AI产物不应该有版权。想做长文了，忙完考试可能。",
-    date: "2026-06-29T21:03",
-    images: [],
-  },
-  {
-    id: 14,
-    content:
-      "Wallpaper Engine死了？我只能说好死，这玩意本质就是窃取steam的全球CDN当免费云存储用，无版权就算了，还是NSFW，NSFW就算了，还有伪装壁纸的其他文件，一群搬运无版权作品滥用steamCDN分发网络挨铁拳还撒泼打滚上了。白嫖人家steamCDN不让用了还正义上了。",
-    date: "2026-07-05T15:16",
-    images: [],
-  },
-  {
-    id: 15,
-    content:
-      "不能理解为什么越来越多的人喜欢直接复制粘贴LLM的回答做评论或者贴文，你说你要是很牛逼的模型也就算了，GPT5.6啊，Fable 5啊，gemini……emm，3.5pro还没出。你他妈的动不动弄个垃机模型ai味大的一批，你复制粘贴的意义在哪里?我是不会用用不起?除了能够彰显，你他妈ai狂热还没消退以及你的傲慢之外真的没什么用。",
-    date: "2026-07-12T01:10",
-    images: ["https://box.pgntgz.top/posts/diary/20260712_llm_post.webp"],
-  },
-  {
-    id: 16,
-    content:
-      "算是23号文的续，我觉得X有一种伪装幼稚症，动机不明的伪装自己在幼稚状态，感觉像是询问或者公布一些公认的东西的无意义的表演惊讶。emmm....说人话就是炒作，特别是GROK加入X真是个伟大的发明。哎，总之远离社交媒体是好的",
-    date: "2026-07-20T19:58",
-  },
-  {
-    id: 17,
-    content:
-      "不是一个专业程序员的情况下运营博客还是挺那个的，我还是受不了Mizuki的性能了，现在是回归主线了。新的域名是18号买的。说实话确实好看啊。考虑到topSEO太差，而且内容方面的风险，到底还是妥协了，这次干脆连域名一起也给迁过来了，本月的文章计划看来又要推迟了。几天要把剩下的项目啥的也给搬到新的域名。",
-    date: "2026-08-23T21:39",
-  },
-];
+export function loadDiaryData(): DiaryItem[] {
+	const filePath = path.join(process.cwd(), "src/data/diary.txt");
+	if (!fs.existsSync(filePath)) {
+		return [];
+	}
 
-// 获取日记统计数据
+	const fileContent = fs.readFileSync(filePath, "utf8");
+	const lines = fileContent.split("\n").filter((l) => l.trim().length > 0);
+	const items: DiaryItem[] = [];
+
+	let currentId = 1;
+	for (const line of lines) {
+		const trimmed = line.trim();
+		if (!trimmed || trimmed.startsWith("#")) continue;
+
+		// 提取日期 (匹配 YYYY-MM-DD 或 YYYY-MM-DDTHH:mm 或 YYYY-MM-DD HH:mm)
+		const dateMatch = trimmed.match(/^(\d{4}-\d{2}-\d{2}(?:[T\s]\d{2}:\d{2})?)\s+(.*)$/);
+		if (dateMatch) {
+			let dateStr = dateMatch[1].replace(" ", "T");
+			if (dateStr.length === 10) dateStr += "T12:00";
+			let rest = dateMatch[2];
+
+			let images: string[] = [];
+			// 提取 [images: url1,url2]
+			const imgMatch = rest.match(/\[images:\s*([^\]]+)\]/);
+			if (imgMatch) {
+				images = imgMatch[1].split(",").map((s) => s.trim()).filter(Boolean);
+				rest = rest.replace(imgMatch[0], "").trim();
+			}
+
+			// 也自动识别行内以 http 开头的独立图片链接
+			const urlMatches = rest.match(/https?:\/\/[^\s]+\.(?:webp|png|jpg|jpeg|gif)/gi);
+			if (urlMatches && images.length === 0) {
+				// images.push(...urlMatches);
+			}
+
+			items.push({
+				id: currentId++,
+				date: dateStr,
+				content: rest,
+				images: images,
+			});
+		}
+	}
+
+	return items;
+}
+
+export const getDiaryList = (limit?: number): DiaryItem[] => {
+	const data = loadDiaryData();
+	const sorted = data.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+	if (limit && limit > 0) return sorted.slice(0, limit);
+	return sorted;
+};
+
 export const getDiaryStats = () => {
-  const total = diaryData.length;
-  const hasImages = diaryData.filter(
-    (item) => item.images && item.images.length > 0,
-  ).length;
-  const hasLocation = diaryData.filter((item) => item.location).length;
-  const hasMood = diaryData.filter((item) => item.mood).length;
+	const data = loadDiaryData();
+	const total = data.length;
+	const hasImages = data.filter((item) => item.images && item.images.length > 0).length;
 
-  if (total === 0)
-    return {
-      total: 0,
-      hasImages: 0,
-      hasLocation: 0,
-      hasMood: 0,
-      imagePercentage: 0,
-      locationPercentage: 0,
-      moodPercentage: 0,
-    };
-
-  return {
-    total,
-    hasImages,
-    hasLocation,
-    hasMood,
-    imagePercentage: Math.round((hasImages / total) * 100),
-    locationPercentage: Math.round((hasLocation / total) * 100),
-    moodPercentage: Math.round((hasMood / total) * 100),
-  };
+	return {
+		total,
+		hasImages,
+	};
 };
 
-// 获取日记列表（按时间倒序）
-export const getDiaryList = (limit?: number) => {
-  const sortedData = [...diaryData].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-  );
-
-  if (limit && limit > 0) {
-    return sortedData.slice(0, limit);
-  }
-
-  return sortedData;
-};
-
-// 获取最新的日记
-export const getLatestDiary = () => {
-  return getDiaryList(1)[0];
-};
-
-// 根据ID获取日记
-export const getDiaryById = (id: number) => {
-  return diaryData.find((item) => item.id === id);
-};
-
-// 获取包含图片的日记
-export const getDiaryWithImages = () => {
-  return diaryData.filter((item) => item.images && item.images.length > 0);
-};
-
-// 根据标签筛选日记
-export const getDiaryByTag = (tag: string) => {
-  return diaryData
-    .filter((item) => item.tags?.includes(tag))
-    .sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-    );
-};
-
-// 获取所有标签
-export const getAllTags = () => {
-  const tags = new Set<string>();
-  diaryData.forEach((item) => {
-    if (item.tags) {
-      item.tags.forEach((tag) => tags.add(tag));
-    }
-  });
-  return Array.from(tags).sort();
-};
-
-export default diaryData;
+export default loadDiaryData();

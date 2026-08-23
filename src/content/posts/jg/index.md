@@ -9,7 +9,7 @@ tags:
   - android
   - 教程向
   - GNU/Linux
-image: https://box.pgntgz.top/posts/hoi4/screenshot-2026-06-20_17.49.10.webp
+image: https://box.pgntgz.org/posts/hoi4/screenshot-2026-06-20_17.49.10.webp
 ---
 毫无疑问的是现在是AI时代，上网一搜索就是各种乱七八糟的教程，教你用agent的，教你用来写文章的，教你做AI slop视频恰米的。大家都生怕自己赶不上这个时代的潮流，所有人都在表达自己和AI的事情，塞暴了我的信息流，使得自己看起来不是一个落伍者。哪怕没有人在意复制粘贴LLM的回答做的评论或者贴文。
 
