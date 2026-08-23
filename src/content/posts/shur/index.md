@@ -40,18 +40,22 @@ image: https://box.pgntgz.top/posts/shur/icon_oJHkpx5GsjyrG5_nxTfEs2FmP6g7_hmnbE
 
 所有要用到的东西的地址：
 [Ficitx5改版](https://github.com/BryceWG/fcitx5-android-bibi-keyboard/releases)
+
 Ficitx5增加说点啥联动的版本
 
 [说点啥](https://github.com/BryceWG/BiBi-Keyboard/releases)
+
 Google play的pro是非开源的版本
 
 [中州韵插件](https://f-droid.org/zh_Hans/packages/org.fcitx.fcitx5.android.plugin.rime/)
+
 为Ficitx5增加中州韵输入引擎的支持
 
 [雾凇拼音](https://github.com/iDvel/rime-ice/releases)
+
 推荐下载`full`包
 #### 语音输入解决
-[说点啥](https://github.com/BryceWG/BiBi-Keyboard/releases)无疑提供了极佳的解决方案，说点啥的安装使用极其方便，安装然后选择服务商就可以了。
+[说点啥](https://github.com/BryceWG/BiBi-Keyboard/releases) 无疑提供了极佳的解决方案，说点啥的安装使用极其方便，安装然后选择服务商就可以了。
 说点啥提供了一堆[方案，其开发者做了如下推荐](https://brycewg.notion.site/bibi-keyboard-providers-guide) 
 
 我个人的体感下最好的还是Sensevoice，他的int8版本轻量且快捷，最让人担心的精确问题我的体感完全够用，当然问题是有的：
@@ -79,7 +83,7 @@ Ficitx5就不用我介绍了，然后安装[Ficitx5改版](https://github.com/Br
 
 
 ### 效果
-这样全过程就好了。小企鹅支持动态色彩主题稍微配置一下，效果媲美Gboard。愿意折腾[Ficitx5支持第三方皮肤](https://github.com/tankb52/fcitx5-andoird-themes)
+这样全过程就好了。小企鹅支持动态色彩主题稍微配置一下，效果媲美Gboard。[Ficitx5支持第三方皮肤](https://github.com/tankb52/fcitx5-andoird愿意折腾-themes)
 
 ![效果](https://box.pgntgz.top/posts/shur/photo_2026-05-31_21-42-08.avif)
 语言效果

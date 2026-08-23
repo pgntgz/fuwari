@@ -26,8 +26,10 @@ image: https://box.pgntgz.top/posts/root/lsp.avif
 
 
 ## 爽了再说（先推荐点东西再bb）
-首先最好刷个lsp，我推荐建议这个版本的，我选择的是 [构建版](https://github.com/JingMatrix/LSPosed/actions) 当然记得打Zygisk 可以参考上期
+首先最好刷个Xposed支持，大名鼎鼎的lsposed已经停止维护了，后面好像有转生不过貌似转闭源了，我在这里推荐现代重构的[Vector](https://github.com/JingMatrix/Vector)项目所以我推荐的实现是当然记得打Zygisk 可以参考上期
+
 *3.29修：这个项目现在改名为了Vector，连接依然可用*
+*8.21修：补充更多细节*
 ### Iconify
 GPL-3.0开源[github](https://github.com/Mahmud0808/Iconify?tab=readme-ov-file)
 ⚠️*部分功能尚未适配android16系统*
@@ -71,7 +73,7 @@ LSP模块仓库是金矿，不过有很多逆向破解模块很容易被DMCA，�
 
 ⚠️破解类模块很可能导致封号
 
-[Qfun](https://github.com/oneQAQone/QFun) GPL-3.0 QQ/TIM 功能增强模块，且可扩展
+[Qfun](https://github.com/oneQAQone/QFun) GPL-3.0 QQ/TIM 功能增强和净化模块，且可通过Java插件扩展
 
 [galqq](https://github.com/yiyihuohuo/GalQQ) Apache-2.0 为QQ增加gal选项,调用llm api生成
 
@@ -79,6 +81,7 @@ LSP模块仓库是金矿，不过有很多逆向破解模块很容易被DMCA，�
 
 [词幕](https://github.com/tomakino/lyricon) Apache-2.0 状态栏歌词显示增强工具
 
+[NexAlloy](https://github.com/nexalloy/NexAlloy) GPL-3.0 大量软件的增强和净化插件，包括youtube Reddit GooglePhotos INS....
 
 ---
 
