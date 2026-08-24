@@ -61,7 +61,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "PJSK贴纸",
-			url: "https://pjsk.pgntgz.top/pjsk/",
+			url: "https://pjsk.pgntgz.org/pjsk/",
 			external: true,
 			icon: "material-symbols:sentiment-satisfied-outline-rounded",
 		},

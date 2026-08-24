@@ -224,7 +224,7 @@ nekobox的配置比sing-box好写点，nekobox兼容旧的sing-box语法，同�
 
 ![Pasted image 20260728144808 w-50%](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260728144808.webp)
 <center>*操你妈，我翻墙是看黄的*</center>
-我在我之前做的[隐私卡](https://yinsi.pgntgz.top/create) 中总结为类快连和类老王。
+我在我之前做的[隐私卡](https://yinsi.pgntgz.org/create) 中总结为类快连和类老王。
 
 不过其实谁也别笑话说，大多数中国人的的一步大概都是这一类。这类提供商往往“贴心”的做了BING甚至百度的SEO笔者买的第一次为VPN付款也是。当时是30多一个月不限量（但其实节点限速严重，不过笔者那时候也不懂就是了）
 
