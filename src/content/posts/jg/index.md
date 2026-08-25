@@ -1,6 +1,6 @@
 ---
 title: 酒馆（SillyTavern）简易教程——另类AI教学之和AI文爱
-published: 2026-06-20
+published: 2026-08-25
 draft: false
 description: 酒馆（SillyTavern）和类酒馆配置简单教程，一些想当然外的讨论，和我发现的宝藏android客户端RPClient
 category: 技术
