@@ -44,7 +44,9 @@ gorhill在上面的uBlock这件事情后立马重上井冈山，并把新项目�
 
 除了不接受任何捐款（他们更希望把钱捐给屏蔽规则的维护者），UBO甚至没有中心服务器，它连CDN都是去中心化的——UBO选择了四个免费提供商（cloudflare，Github，jsdelivr，statically）每次更新规则会随机抽一个CDN拉取。
 
-现在还在的竞争者就是AdGuard和Brave。AdGuard是一家专门经营此类服务的公司，类似proton的感觉，AdGuard是引流产品你会频繁看到他们的广告，推销他们更高级的 AdGuard Premium 独立客户端，不过好歹是良心钱。[^6]Brave也有黑历史比如企图把拦截掉的广告换成自己的，不过貌似改了，当然Brave不是插件是整个的浏览器，和UBO很难直接对比。
+现在还在的竞争者就是AdGuard和Brave。AdGuard是一家专门经营此类服务的公司，类似proton的感觉，AdGuard是引流产品你会频繁看到他们的广告，推销他们更高级的 AdGuard Premium 独立客户端，不过好歹是良心钱。
+
+[^6]Brave的黑历史就是比如企图把拦截掉的广告换成自己的，并且在注册交易所时自动填充他们的收款码。不过貌似改了？不知道。还有就是Brave不是一个简单的插件是整个的浏览器，和UBO很难直接对比。**并且作为同性恋者我主观上会讨厌Brave**，因为Brave的CEO  Brendan Eich曾是mozilla的CEO，但其被爆出向加州第8号提案的政治捐款1000$，这项法案旨在将加利福尼亚州内婚姻关系的定义仅限定于异性之间，从而否定同性婚姻的正当性。哪怕Firefox&mozilla选择让其滚蛋，Brendan Eich至今仍然拒绝为可能因为他而分离的同姓伴侣道歉————**当然我认同这是他的政治表达自由**，当然在这里用更长的篇幅介绍Brave的商业道德的瑕疵是我的表达自由
 
 所有，总结来说：
 如果你希望用极低的内存消耗屏蔽所有广告和追踪器，而且你不希望卖掉你的隐私给商业公司，**就是非uBlock Origin不可**
@@ -55,18 +57,18 @@ Google挨骂的主要原因是换掉Manifest V2 。善意解读下最好的辩�
 #### MV3都改了啥？
 抛开UBO不谈，MV3的确是有技术升级，最重要的就是安全性的改进：
 ![Pasted image 20260711013805.png](https://box.pgntgz.org/posts/v3/Pasted%20image%2020260711013805.webp)<center>*图 ：GNU LibreJS项目*</center>
-大家都知道不明来源JS是个严重的安全问题，RMS本人极其讨厌JS的特性，他称JS是“非自由软件陷阱”（The JavaScript Trap），因为相比明文的HTML，JS的恶意程序可以编译为二进制。RMS还为此发动了LibreJS（不过和GNU大多数怀着美好愿望的项目一样烂尾了）。Tor的增强模式会直接屏蔽所有JS，而MV2允许扩展从远程服务器动态下载并运行 JavaScript扩展里要运行的每一行 JavaScript 代码，而在MV3，JS都必须死死地打包在下载的 `.zip` 插件包里，必须通过 Chrome Web Store 的静态和动态上架审核。极大改善了安全性。
+大家都知道不明来源JS是个严重的安全问题，RMS本人极其讨厌JS的特性，他称JS是“非自由软件陷阱”（The JavaScript Trap），因为相比明文的HTML，JS的恶意程序可以编译为二进制（BTW，前文的Brendan Eich正是JS之父）。RMS还为此发动了LibreJS（不过和GNU大多数怀着美好愿望的项目一样烂尾了）。Tor的增强模式会直接屏蔽所有JS，而MV2允许扩展从远程服务器动态下载并运行 JavaScript扩展里要运行的每一行 JavaScript 代码，而在MV3，JS都必须死死地打包在下载的 `.zip` 插件包里，必须通过 Chrome Web Store 的静态和动态上架审核。极大改善了安全性。
 
 此外还有：Service Workers 替代 Background Pages，改为事件驱动可以缓解插件内存占用问题，插件闲置会休眠；MV2 充斥着极其恶心的**回调地狱（Callback Hell）** MV3推动**Promise** 架构方便开发者；引入了更强大的运行时可选权限改善了权限控制.........
 
 
-BUT，这不是Google可以被善意解读的理由，**抛开UBO不谈？根本抛不开！**
+BUT，**这不是Google可以被善意解读的理由**，**抛开UBO不谈？根本抛不开！**
 #### 为啥“抛不开”？
 UBO的运作流程：是是浏览器收到网络请求 $\rightarrow$ 拦截并丢给 uBO $\rightarrow$ uBO 用自己的规则库匹配$\rightarrow$ 告诉浏览器“放行”或“拦截”。这个过程严重依赖`webRequest` API。
 
 **而Google十分鸡贼的在技术进步中夹带私活的砍掉了`webRequest` API**
 
-Google在更新中直接砍掉了 `webRequest` 的修改功能，换成了 **`declarativeNetRequest` (DNR) API**。现在扩展不能直接拦截请求了，必须提前把过滤规则打包成一个死板的列表交给浏览器，匹配动作只能由浏览器完成。
+Google在更新中直接砍掉了 `webRequest` 的修改功能，换成了 **`declarativeNetRequest` (DNR) API**。现在扩展不能直接拦截请求了，必须提前把过滤规则打包成一个死板的列表交给浏览器，**匹配动作只能由浏览器完成**。
 
 这就完了？Google 在 MV3 中对规则数量设置了严格的上限（最初只有 3 万条，后来放宽但依然远不够用）。对于动辄加载几十万条规则的 uBO 来说，根本是地狱。uBlock Origin针对MV3推出了uBlock Origin Lite，但是在性能和成效上显著落后完整的UBO。
 
@@ -80,12 +82,12 @@ mozilla做的极其简单，把`webRequest` API加回来不就行了。于是UBO
 所有我认为善意解读，是不生效的对于Google来说，它明白这么做会怎么样，但Google还是砍掉了`webRequest` API**这就是在技术进步中夹带私货。
 
 #### 这么做的影响
-Google的行为所有依赖Chromium的下游浏览器都必须跟着当太监，无论是单独留下MV2，还是复刻mozilla在Gecko的行为都需要更改Chromium源代码，这需要巨大的精力。尤其对于很多一人计划，几乎不可能。
+Google的行为导致所有依赖Chromium的下游浏览器都必须跟着当太监，无论是单独留下MV2，还是复刻mozilla在Gecko的行为都需要更改Chromium源代码，这需要巨大的精力。尤其对于很多一人计划，几乎不可能。
 
 对于本身就看广告拦截器不爽的厂商太好了，比如Microsoft非常开心的宣布Edge会跟进。而Brave则表示会尽量支持MV2，但Brave又不一样Brave的拦截是直接在引擎里面的，用的是`adblock-rust`。对于个人开发者就是很难受了——如果不想跟着Google当太监，你要不用`adblock-rust`要不就改自己内核。而不是每一个开发者都有Brave的团队和盈利能力。
 
 ### 现在怎么办？
-首先当然是推荐更换Firefox，事实上Firefox不弱于Chrome。
+当然是推荐更换Firefox，事实上Firefox不弱于Chrome。
 ![mozilla价值—造反有理.png](https://box.pgntgz.org/posts/v3/mozilla%E4%BB%B7%E5%80%BC%E2%80%94%E9%80%A0%E5%8F%8D%E6%9C%89%E7%90%86.webp)<center>*图 ：mozilla曾用的宣传语——造反有理*</center>
 
 我从使用电脑时就在用Chrome，有很强的惯性，但是我还是换了Firefox——Firefox不弱，在性能上并没有啥明显的落后，比如在内存管理上更为保守和高效。在开启大量标签页的场景下，整体系统内存占用通常显著低于 Chromium，多任务处理更为轻盈。
@@ -96,7 +98,8 @@ Google的行为所有依赖Chromium的下游浏览器都必须跟着当太监，
 
 如果必须要用chrome可以尝试UBO为之开发的阉割版[ublock origin lite](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)但是UBO的开发者明确说了UOBL就是弱于UBO：
 
-[^7]> - Cannot use all filter lists simultaneously (rule limits apply)  
+[^7]
+> - Cannot use all filter lists simultaneously (rule limits apply)  
 >     不能同时使用所有过滤器列表（规则限制适用）
 > - No cosmetic filtering in the default mode  
 >     默认模式下没有外观过滤

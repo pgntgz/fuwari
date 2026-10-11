@@ -102,9 +102,9 @@ steam：pgntgz (好友代码:1762337426)
 
 如果你愿意，欢迎为我报销域名费用和给予额外的创作鼓励
 
-`USDT（Pos）0x524aD810F4fe2808B235bcC2B45ABBf4df18F55C`
+`USDT（TRON）TMyhYomX1PbBwMmCEFmWBdVqxFJatoGLKV`
 
-`XMR：45RBGeSWwLe22o8iujLRax2sZP4LULu1vF1USyFkrAPs7TfhU2FatrB1DgdVEgSrmqHLkVP5nYDSvgHQbeQUqci63tUoxtS`
+`XMR：45FmNpeB1rZDijZdvHBFkpiNBwu8ye5dePKctSu6PkNpAm5CZgZfg2C6FpiL8583fHNyk8CPYG9JL3CBE88AYL8x8wyu72L`
 
 
 ##### 为什么要做这种事情？
