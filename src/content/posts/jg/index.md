@@ -123,11 +123,12 @@ SillyTavern自带了直链解析功能，可以解析[Chub](https://chub.ai/) [J
 ### LLM那家强？
 截止目前顶端模型就是claude的模型在所有层面都遥遥领先，接着是OPENAI，下面是DS和kimi这些国产和炒做狗Grok。什么你问之前三驾马车的Google？哦对了，Gemini3.5RPO还没出。
 
-不过不开玩笑的说体验是边际递减的，我现在还常常用gemini3.0flash呢，好模型体验更好是没错但是价格贵的可就不只有一点了。什么？你对价格不在意？好用就行？emmm......欢迎为我的创作捐款到`USDT（Pos）：0x524aD810F4fe2808B235bcC2B45ABBf4df18F55C` `XMR:45RBGeSWwLe22o8iujLRax2sZP4LULu1vF1USyFkrAPs7TfhU2FatrB1DgdVEgSrmqHLkVP5nYDSvgHQbeQUqci63tUoxtS`
+不过不开玩笑的说体验是边际递减的，我现在还常常用gemini3.0flash呢，好模型体验更好是没错但是价格贵的可就不只有一点了。什么？你对价格不在意？好用就行？emmm......欢迎为我的创作捐款到`USDT（TRON）TMyhYomX1PbBwMmCEFmWBdVqxFJatoGLKV`
+`XMR：45FmNpeB1rZDijZdvHBFkpiNBwu8ye5dePKctSu6PkNpAm5CZgZfg2C6FpiL8583fHNyk8CPYG9JL3CBE88AYL8x8wyu72L`
 
-好了，正常来说我依然推荐试试gemini，毕竟绑卡共享GCP的300$赠金（不过貌似以后就不共享了当我没说）而且gemini便宜，最近gemini3.7flash直接打折一半。至于中转站我依然是推荐OrcaRouter这种正规的，小型中转站不但会[^2]偷你的日志还会为了省钱把你的[^3]Fable 5.0换成GLM5.1。更加省钱的方法也有比如灰色一点的反向代理和黑色的退款流等等，我不做推荐。至于本地部署，我只能说除非你有张5090不然大概不用想。你要是真有的话欢迎为我的创作捐款到.........
+好了，正常来说我依然推荐试试gemini，毕竟绑卡共享GCP的300$赠金（不过貌似以后就不共享了当我没说）而且gemini便宜，最近gemini3.7flash直接打折一半。至于中转站我依然是推荐openrouter这种正规的，openrouter记得开ZDR和ban点中国提供商。小型中转站不但会[^2]偷你做爱的日志还会为了省钱把你的[^3]Fable 5.0换成GLM5.1。更加省钱的方法也有比如灰色一点的反向代理和黑色的退款流等等，我不做推荐。至于本地部署，我只能说除非你真的有张5090不然大概不用想。你要是真有的话欢迎为我的创作捐款到.........
 
-还有一个问题就是关于模型的NSFW米线，官方挂载的国模一般会严点，不过外模也有严格点就是玩不了萝莉————只要映射到未成年就秒切。其他方面一般SEX情节是没啥的，想要更好的表现就建议打一个破限的预设了。
+还有一个问题就是关于模型的NSFW米线，官方挂载的国模一般会严点，如果用不过外模也有严格的点就是玩不了萝莉————只要映射到未成年就秒切。其他方面一般SEX情节是没啥的，想要更好的表现就建议打一个破限的预设了。
 ### 怎么躺在床上玩
 当然没有人喜欢在一台庞大的台式PC前打飞机，解决很简单。首先android一样可以跑SillyTavern，参考前面就是了。不想在手机上跑这个玩意也可以，找到`config.yaml` 的`whitelist` 字段放行手机的IP就是了。
 
