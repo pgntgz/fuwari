@@ -157,7 +157,7 @@ Clash的开发中没有发生许可证的闹剧，早期Clash是MIT后面换了G
 ![Pasted image 20260801143322](https://box.pgntgz.org/posts/gfw2/Pasted%20image%2020260801143322.webp)
 <center>*CFW*</center>
 
-不过幽默的是大伙分不清GUI客户端和核心开始疯狂的恐慌。笔者亲历了哪一个时期，基本就是一群炒作狗在墙内疯狂散布Clash完蛋的消息，不明觉厉的人根本分不清CFW和clash,墙内还是数码文盲的墙外社区（推特）开始疯狂的焦虑。
+不过幽默的是大伙分不清GUI客户端和核心开始疯狂的恐慌。笔者亲历了哪一个时期，基本就是一群炒作狗在墙内疯狂散布Clash完蛋的消息，不明觉厉的人根本分不清CFW和clash核心的区别,不管墙内还是数码文盲的墙外社区（推特）开始疯狂的焦虑。
 
 结果就是Clash被推到风口浪尖，搞代理最忌讳出名。但一堆炒作狗不管疯狂在微博、抖音、B站疯狂发布Clash跑路啦！Clash作者被抓！开源社区遭到毁灭性打击！一度成为了微博热搜和抖音热门。
 
@@ -165,9 +165,9 @@ Clash的开发中没有发生许可证的闹剧，早期Clash是MIT后面换了G
 
 下游的维护者一看核心都跑了自己也只能跑了。当时墙内一度是绝望状态——clash是最新手友好的客户端，突然一夜之间全都跑路了。加上炒作狗煽风点火，当时的情况堪称魔幻。
 
-不过后来大家还是冷静了下来发现其实影响没有炒作的那么大，clash只是贡献者跑路，代码又不会跑，而且V2ray，Xray，sing-box都好好的。Clash.meta（现在叫Mihomo）也迅速在Clash的尸体上重建。
+不过后来大家还是冷静了下来发现其实影响没有炒作的那么大————clash只是贡献者跑路，代码又不会长腿跑，而且V2ray，Xray，sing-box核心项目都好好的。Clash.meta（现在叫Mihomo）也迅速在Clash的尸体上重建。
 
-到了今天Clash的继承者Mihomo已经接过了CLash的王座，其诞生了FLclash，Clash Verge Rev，clash Meta等等优秀项目，可以说Clash系列就是现在最受欢迎的客户端。只能说炒作狗真该死，Clash的大洪水这群炒作狗要付主要责任。
+到了今天Clash的继承者[^14]Mihomo已经接过了CLash的王座，其诞生了FLclash，Clash Verge Rev，clash Meta等等优秀项目，可以说Mihome-clash系列就是现在最受欢迎的客户端。只能说炒作狗真该死，Clash的大洪水这群炒作狗要付主要责任。
 
 
 ### sing-box
@@ -226,7 +226,7 @@ nekobox的配置比sing-box好写点，nekobox兼容旧的sing-box语法，同�
 <center>*操你妈，我翻墙是看黄的*</center>
 我在我之前做的[隐私卡](https://yinsi.pgntgz.org/create) 中总结为类快连和类老王。
 
-不过其实谁也别笑话说，大多数中国人的的一步大概都是这一类。这类提供商往往“贴心”的做了BING甚至百度的SEO笔者买的第一次为VPN付款也是。当时是30多一个月不限量（但其实节点限速严重，不过笔者那时候也不懂就是了）
+不过其实谁也别笑话说，大多数中国人的的一步大概都是这一类。这类提供商往往“贴心”的做了BING甚至百度的SEO，笔者买的第一次为VPN付款也是。当时是30多一个月不限量（但其实节点限速严重，不过笔者那时候也不懂就是了）
 
 一直到后面youtube给我推荐了功德无量的[不良林](https://www.youtube.com/@bulianglin)，直接激发了我的折腾DNA，我很快理解了这一切，然后跟着教程配置了clash verge随便买了改10块的机场。可以说是钱塘江上潮信起，今日方知我是我。从IP质量稳定性速度吊打卖信息差的商业VPN，而所谓的复杂点其实就是copy下节点URL。
 
@@ -328,3 +328,5 @@ nekobox的配置比sing-box好写点，nekobox兼容旧的sing-box语法，同�
 [^12]: [来源](https://github.com/XTLS/Xray-core/discussions/4753)
 
 [^13]: [这来源文章真一般说实话，不过确实这种明显的问题都不值得吵](https://lifebuddies.hk/wangvpn-review/)
+
+[^14]: btw，Mihome是mi（米，指米哈游）+home（同性恋者，但在国内常指淫梦民），Mihone的命名是十足的二次元烂梗
