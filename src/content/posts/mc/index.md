@@ -18,15 +18,18 @@ image: https://box.pgntgz.org/posts/mc/mcfm.webp
 <img src="https://box.pgntgz.org/posts/mc/Pasted%20image%2020261124050147.webp" alt="Pasted image 20261124050147.png" style="width: 40%; height: auto; display: block; margin: 0 auto;" />
 <center>*他的主页*</center>
 
-但我自己很想火炮学（Create Big Cannons）热力学（Thermodynamica）这几个扩展mod。因为我就利用多余的额度vibe coding做了这些mod的**Minecraft26.2+NeoForge适配**。我本身的目的是为了帮忙建服务器，所以也顺便移植了一些其他多人的有趣的mod（toneko 和 JustARod BTW，他们有点轻微的NSFW）。
+但我自己很想玩火炮学（Create Big Cannons）热力学（Thermodynamica）这几个扩展mod但都没有这个版本的适配。因为我就利用多余的额度vibe coding做了这些mod的**Minecraft26.2+NeoForge适配**。我本身的目的是为了帮忙建服务器，所以也顺便移植了一些其他多人的有趣的mod（toneko 和 JustARod BTW，他们有点轻微的NSFW）。
 <img src="https://box.pgntgz.org/posts/mc/mcfm.webp" alt="mcfm.png" style="width: 70%; height: auto; display: block; margin: 0 auto;" />
 <center>*示意图*</center>
-值得注意的我自己的几轮debug，直到这个版本**我游玩中他们都是可用状态**，没有让我值得注意的重大bug。但我并不能保证这些mod 100%的完成，也不能保证长期的维护他们，选择公开只是因为移植的过程挺复杂的说实话所以我不想让别人再重新造轮子。而且因为我实在没有精力移植庞大的瓦尔基里（Valkyrien Skies），所以我只能选择把**相关的内容阉割掉了**，所以他们可能并不完整。
+值得注意的我自己的几轮debug，直到这个版本 **我游玩中他们都是可用状态**，没有让我值得注意的重大bug。但我并不能保证这些mod 100%的完成，也不能保证长期的维护他们，选择公开只是因为移植的过程挺复杂的说实话所以我不想让别人再重新造轮子。而且因为我实在没有精力移植庞大的瓦尔基里（Valkyrien Skies），所以我只能选择把**相关的内容阉割掉了**，所以他们可能并不完整。
 
 ## 发布
 源代码方面因为太杂了所以我没有放在我的github主页，我建立了一个统一的组织把他们发布在了那里[源码地址](https://github.com/orgs/pgntgz-mod-26-2/repositories)
 
-我的服务器的整合包也顺便弄了一份发布在这里，这里边包含了其他常用mod，如果你考虑直接打开游玩的话可以直接下载整合包。
+我的服务器的**整合包也顺便弄了一份发布在这里**
+
+这是一份机械动力为主要玩法的26.2整合包，包含72份模组启用68份。这里边同时涵盖了其他常用mod，导入安装就能获得很棒的游戏体验。如果你考虑直接打开即玩的话可以直接下载这个
+整合包。
 
 [Google 硬碟](https://drive.google.com/file/d/1FkwLoiWZIldQYVU1oSTqzzTGBXA-dULm/view?usp=drive_link)
 
@@ -38,7 +41,7 @@ image: https://box.pgntgz.org/posts/mc/mcfm.webp
 
 同时值得注意的是这份整合包中CC BY-NC-SA 4.0发布的内容我并没有清除，所以**整个整合包只允许免费或者只收回成本的分发**。
 
-如果确实觉得配置太麻烦搞不懂想要获取直接可用的整合包。或者想一起玩服务器的话可以通过博客公开的联系方式私下联络我。
+*如果确实觉得配置太麻烦搞不懂想要获取直接可用的整合包。或者想一起玩服务器的话可以通过博客公开的联系方式私下联络我。*
 
 
 > **1. 机械动力（Create）图形资产**
