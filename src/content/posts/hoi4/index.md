@@ -6,6 +6,7 @@ category: 技术
 tags:
   - 长篇
   - 水
+  - bypgntgz
 image: https://box.pgntgz.org/posts/hoi4/screenshot-2026-06-20_17.49.10.webp
 ---
 
